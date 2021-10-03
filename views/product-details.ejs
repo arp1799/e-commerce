@@ -1,0 +1,846 @@
+<!-- get_header('Page Name','Title')-->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>globalnostalgia - Product Details</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="favicon.html">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.html">
+
+		<link rel="stylesheet" href="/assets/css/woocommerce.css">
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/css/jquery-ui.css">
+
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/css/animate.css">
+		<link rel="stylesheet" href="/assets/css/iconfont.css">
+		<link rel="stylesheet" href="/assets/css/isotope.css">
+		<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="/assets/css/vertical-menu.css">
+		<link rel="stylesheet" href="/assets/css/navigation.min.css">
+		
+
+		<!--For Plugins external css-->
+		<link rel="stylesheet" href="/assets/css/plugins.css" />
+
+		<!--Theme custom css -->
+		<link rel="stylesheet" href="/assets/css/all_product.css">
+
+		<!--Theme Responsive css-->
+		<link rel="stylesheet" href="/assets/css/responsive.css" />
+</head>
+<body class="woocommerce">
+	
+    <%- include('partials/other_page_header'); -%>
+<!-- welcome section -->
+<!--breadcumb start here-->
+<div class="xs-breadcumb">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+				<li class="breadcrumb-item"><a href="product-category.html">All Categories</a></li>
+				<li class="breadcrumb-item"><a href="product-category.html">Computer & Office</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Computer</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+<!--breadcumb end here--><!-- End welcome section -->
+
+<!-- product info section -->
+<!-- Modal -->
+<div class="xs-section-padding xs-product-details-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="xs-sync-slider-preview">
+                    <ul class="xs-social-tigger">
+                        <li><a href="https://plus.google.com/discover" class="xs-google-plus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.facebook.com/" class="xs-facebook"><i class="icon icon-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" class="xs-twitter"><i class="icon icon-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="xs-instagram"><i class="icon icon-instagram"></i></a></li>
+                        <li><a class="tigger-icon" href="#"><i class="fa fa-share"></i></a></li>
+                    </ul>
+                    <div class="sync-slider-preview owl-carousel">
+                        
+                        <% if(typeof product !== 'undefined' && product){ 
+                            
+                            for(var i=0;i<product.avatar.length;i++){%>
+                            
+                            <div class="item">
+                                <img src="<%= product.avatar[i] %>" style="width:473px;height:473px" alt="Product">
+                            </div>
+
+                        <% }
+                        }else{ %>
+                            <div class="item">
+                                <img src="https://www.gizmochina.com/wp-content/uploads/2019/09/7t-9_1_1-473x473.png" alt="Product">
+                            </div>
+                            <div class="item">
+                                <img src="https://www.kickmobiles.com/images/thumbs/0011404_oneplus-7t-dual-sim-128gb-glacier-blue-frosted-silver-_610.jpeg" alt="Product">
+                            </div>
+                            <div class="item">
+                                <img src="https://cdn0.vox-cdn.com/hermano/verge/product/image/9180/vpavic_190924_3684_0068_squ.jpg" alt="Product">
+                            </div>
+                        <%}%>
+                        
+                    </div>
+                </div>
+                <div class="sync-slider-thumb owl-carousel">
+                    <% if(typeof product !== 'undefined' && product){ 
+                            
+                        for(var i=0;i<product.avatar.length;i++){%>
+                        
+                        <div class="item">
+                            <img src="<%= product.avatar[i] %>" style="width:158px;height:158px" alt="Product">
+                        </div>
+
+                    <% }
+                    }else{ %>
+                        <div class="item">
+                            <img src="https://www.gizmochina.com/wp-content/uploads/2019/09/7t-9_1_1-473x473.png" alt="Product">
+                        </div>
+                        <div class="item">
+                            <img src="https://www.kickmobiles.com/images/thumbs/0011404_oneplus-7t-dual-sim-128gb-glacier-blue-frosted-silver-_610.jpeg" alt="Product">
+                        </div>
+                        <div class="item">
+                            <img src="https://cdn0.vox-cdn.com/hermano/verge/product/image/9180/vpavic_190924_3684_0068_squ.jpg" alt="Product">
+                        </div>
+                    <%}%>
+                    
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="summary-content single-product-summary">
+                    <% if(typeof product !== 'undefined' && product){ %>
+                        <h3 class="entry-title"><%= product.brand%></h3>
+                        <h4 class="product-title"><%= product.productname%></h4>
+                    <% }else{ %>
+                        <h3 class="entry-title">OnePlus</h3>
+                        <h4 class="product-title">OnePlus 8 6-inch with In-built Finger Print Sensor and 40mp Camera. 6GB Ram+ 128GB Storage</h4>
+                    <%}%>
+                        <span class="star-rating color-green">
+                        <span class="value">(200 Customers review)</span>
+                    </span>
+                    <% if(typeof product.details !== 'undefined' && product.details){ %>
+                        <%-product.details%>
+                    <% }else{ %>
+                        <ul class="xs-list check">
+                            <li>In-built Fingerprint Scanner</li>
+                            <li>Android 14</li>
+                            <li>Ultra high volume Speakers</li>
+                            <li>248MP rear camera with 4k video at 30/60 fps, 1080p video at 30/60 fps, super slow motion: 720p video at 480 fps, 1080p video at 240fps| 16MP front facing camera</li>
+                            <li>1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</li>
+                            <li>Back-Camera-50MP</li>
+                            <li>16.637 centimeters (6.55-inch) 90Hz fluid display with 2400 x 1080 pixels resolution, 402 ppi pixel density</li>
+                        </ul>
+                    <%}%>
+                    <span class="price highlight">
+                        <del><%= product.prize%>$</del>
+                        <% if(typeof product !== 'undefined' && product){ %>
+                            <%- product.price%>.00 $
+                        <% }else{ %>
+                            Rs.3700.00
+                        <%}%>
+                    </span>
+                    <div class="xs-add-to-chart-form row">
+                        <div class="col-md-8">
+                            <form action="/user/addcart/<%=product_id%>" method="GET">
+                                <div class="w-quantity quantity xs_input_number">
+                                    <input type="number" min="1" max="100" value="1"/>
+                                </div>
+                                <div class="w-quantity-btn">
+                                    <input type="hidden" name="add-to-cart" value="605">
+                                    <button type="submit" class="single_add_to_cart_button btn btn-primary">
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="/user/wishlist/<%=product_id%>" class="xs-wishlist-and-compare"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#" class="xs-wishlist-and-compare"><i class="icon icon-shuffle-arrow" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end product info section -->
+
+<!-- product details section -->
+<div class="xs-section-padding-bottom">
+    <div class="container">
+        <ul class="nav nav-tabs xs-nav-tab version-4" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Descriptions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Additional information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Reviews <span>(39 Ratings)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">Shipping & Payment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="guarantees-tab" data-toggle="tab" href="#guarantees" role="tab" aria-controls="guarantees" aria-selected="false">Seller Guarantees</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane animated slideInUp show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <ul class="list-group list-group-flush table">
+                   
+                        
+                        <% if(typeof product !== 'undefined' && product){ %>
+                            <% for(var i=0;i<taglist.length;i+=2){%>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                <%= taglist[i]%> <span> <%= product[taglist[i]] %></span>
+                            </div>
+                            <% i+=2 %>
+                            <div class="float-right w-50">
+                                <%= taglist[i] %> <span> <%= product[taglist[i]] %></span>
+                            </div>
+                        </li>
+                        <%}%>
+
+                        
+
+                    <% }else{ %>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                Brand Name: <span>OnePlus 8 2020 Model</span>
+                            </div>
+                            <div class="float-right w-50">
+                                Dimensions: <span>16.637 centimeters (6.55-inch)</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                Port: <span>USB Type-C</span>
+                            </div>
+                            <div class="float-right w-50">
+                                Feature: <span>Android 14.0 Google</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                Average Battery Life(in hours): <span>12-15</span>
+                            </div>
+                            <div class="float-right w-50">
+                                Graphics Card Type: <span>Dedicated Card</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                Processor Main Frequency: <span>2.80GHz</span>
+                            </div>
+                            <div class="float-right w-50">
+                                Graphics Card Brand: <span>Nvidia</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                Hard Drive Type: <span>SSD</span>
+                            </div>
+                            <div class="float-right w-50">
+                                Graphics Card Type: <span>Dedicated Card</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                Processor Main Frequency: <span>3.9GHz</span>
+                            </div>
+                            <div class="float-right w-50">
+                                Graphics Card Model: <span>GTX1060</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                Storage Type: <span>In-built</span>
+                            </div>
+                            <div class="float-right w-50">
+                                    Memory Type: <span>128GB</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item clearfix">
+                            <div class="float-left w-50">
+                                Processor Main Frequency: <span>2.80GHz</span>
+                            </div>
+                            <div class="float-right w-50">
+                                Battery type: <span>4 cores Li-ion battery, 60Wh</span>
+                            </div>
+                        </li>
+                    <% } %>
+                    
+                </ul>
+                <div class="product-info-details-wraper">
+                    <div class="line-separetor-title-wraper">
+                        <h2 class="line-separetor-title">Products Highlights</h2>
+                    </div>
+                    <div class="col-md-11 mx-auto">
+                        <div class="single-product-info-details">
+                            <img src="/assets/images/image_loader.gif" data-echo="/assets/images/big_img/big_img_1.jpg" alt="">
+                            <h4>OnePlus 8 2020 Model</h4>
+                            <p>The all new OnePlus 8 Powered by Qualcomm Snapdragon 865. Supports 5G Technology and comes equipped with 90hz Fliud display, a Rear Triple camera Setup with a capability to shoot 4K video @ 30/60 FPS.</p>
+                        </div>
+                        <div class="single-product-info-details">
+                            <img src="/assets/images/image_loader.gif" data-echo="/assets/images/big_img/big_img_2.jpg" alt="">
+                            <h4>Unprecedented  Immersive Visual Experience</h4>
+                            <p> Oxygen OS based on Android v10 operating system with 2.86GHz of clock speed with Qualcomm Snapdragon 865, powered by Kryo 585 CPU octa core processor, Adreno 650 </p>
+                        </div>
+                        <div class="single-product-info-details">
+                            <img src="/assets/images/image_loader.gif" data-echo="/assets/images/big_img/big_img_3.jpg" alt="">
+                            <h4>intel I7-7700HQ</h4>
+                            <p> OnePlus 8 with Alexa Built-in provides hands-free access to Alexa while on-the-go. Say “Alexa” to play music, make calls, ask questions, control smart devices and more using just your voice. Download the Alexa app on your OnePlus 8 to start using Alexa hands-free today. </p>
+                        </div>
+                        <div class="single-product-info-details">
+                            <img src="/assets/images/image_loader.gif" data-echo="/assets/images/big_img/big_img_4.jpg" alt="">
+                            <h4>Hidden details</h4>
+                            <p> Box also includes: Warp charge 30 power adapter, warp type-c cable (support usb 2.0), quick start guide, welcome letter, safety information and warranty card, logo sticker, case, screen protector (pre-applied), sim tray ejector </p>
+                        </div>
+                    </div>
+                    <div class="xs-size-guide">
+                        <img src="/assets/images/image_loader.gif" data-echo="/assets/images/big_img/scale.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane animated slideInUp" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <ul class="list-group list-group-flush table">
+                    <li class="list-group-item clearfix">
+                        <div class="float-left w-50">
+                            Brand Name: <span>OnePlus 8 2020 Model</span>
+                        </div>
+                        <div class="float-right w-50">
+                            Dimensions: <span>16.637 centimeters (6.55-inch)</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <div class="float-left w-50">
+                            Port: <span>USB3.1 Type-C,3.5 mm Mic</span>
+                        </div>
+                        <div class="float-right w-50">
+                            Feature: <span>Camera,FingerPrint Scanner</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <div class="float-left w-50">
+                            Average Battery Life(in hours): <span>12-15</span>
+                        </div>
+                        <div class="float-right w-50">
+                            Graphics Card Type: <span>Dedicated Card</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <div class="float-left w-50">
+                            Processor Main Frequency: <span>3.90GHz</span>
+                        </div>
+                        <div class="float-right w-50">
+                            Graphics Card Brand: <span>Nvidia</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <div class="float-left w-50">
+                            Storage Type: <span>SSD</span>
+                        </div>
+                        <div class="float-right w-50">
+                            Graphics Card Type: <span>Dedicated Card</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <div class="float-left w-50">
+                            Processor Main Frequency: <span>2.80GHz</span>
+                        </div>
+                        <div class="float-right w-50">
+                            Graphics Card Model: <span>GTX1060</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <div class="float-left w-50">
+                            Storage Type: <span>SSD</span>
+                        </div>
+                        <div class="float-right w-50">
+                            Graphics Memory Type: <span>GDDR5</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item clearfix">
+                        <div class="float-left w-50">
+                            Processor Main Frequency: <span>3.90GHz</span>
+                        </div>
+                        <div class="float-right w-50">
+                            Battery type: <span>4 cores Li-ion battery, 60Wh</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane animated slideInUp" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="rate-detail">
+                                    <ul class="rate-list">
+                                        <li>
+                                            <span class="rate-title">5 Stars</span>
+                                            <span class="rate-graph">
+                                                <span class="rate-graph-bar" data-percent="80"></span>
+                                            </span>
+                                            <span class="star-rating" data-value="5"></span>
+                                        </li>
+                                        <li>
+                                            <span class="rate-title">4 Stars</span>
+                                            <span class="rate-graph">
+                                                <span class="rate-graph-bar" data-percent="60"></span>
+                                            </span>
+                                            <span class="star-rating" data-value="4"></span>
+                                        </li>
+                                        <li>
+                                            <span class="rate-title">3 Stars</span>
+                                            <span class="rate-graph">
+                                                <span class="rate-graph-bar" data-percent="40"></span>
+                                            </span>
+                                            <span class="star-rating" data-value="3"></span>
+                                        </li>
+                                        <li>
+                                            <span class="rate-title">2 Stars</span>
+                                            <span class="rate-graph">
+                                                <span class="rate-graph-bar" data-percent="20"></span>
+                                            </span>
+                                            <span class="star-rating" data-value="2"></span>
+                                        </li>
+                                        <li>
+                                            <span class="rate-title">1 Stars</span>
+                                            <span class="rate-graph">
+                                                <span class="rate-graph-bar" data-percent="10"></span>
+                                            </span>
+                                            <span class="star-rating" data-value="1"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <% if(product !== undefined && product){%>
+                                <div class="col-md-6 align-self-center">
+                                <div class="rate-score clearfix">
+                                    <span class="star-rating"></span>
+                                    <p class="rating-score-des">Average Star Rating:  
+                                        <em><%=product.rating%> out of 5</em>
+                                        (15 votes)
+                                    </p>
+                                    <span class="help-tip">
+                                        <span class="help-tip-text">If you finish the payment today, your order will arrive within the estimated delivery time.</span>
+                                    </span>
+                                </div>
+                            </div>    
+                            <%}
+                            else{%>
+                            <div class="col-md-6 align-self-center">
+                                <div class="rate-score clearfix">
+                                    <span class="star-rating"></span>
+                                    <p class="rating-score-des">Average Star Rating:  
+                                        <em>4.7 out of 5</em>
+                                        (15 votes)
+                                    </p>
+                                    <span class="help-tip">
+                                        <span class="help-tip-text">If you finish the payment today, your order will arrive within the estimated delivery time.</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <%}%>
+                            <div class="col-md-12">
+                                <div id="reviews" class="woocommerce-Reviews">
+                                    <div id="comments">
+                                        <h2 class="woocommerce-Reviews-title">
+                                           <%= product.productname %>
+                                        </h2>
+                                        <ol class="commentlist">
+                                            <% if(comments.length>=1){ 
+                                                for(var i=0;i<comments.length;i++){%>
+                                                <li class="comment even thread-even">
+                                                <div class="comment_container clearfix">
+                                                    <img alt="comment avatar" class="avatar" src="/assets/images/avatar/avatar_1.jpg">
+                                                    <div class="comment-text">
+                                                        <div class="star-rating">
+                                                            Rated <strong class="rating"><%= comments[i].rating %></strong> out of 5
+                                                        </div>
+                                                        <p class="meta">
+                                                            <strong class="woocommerce-review__author color-navy-blue"><%= comments[i].author.username %></strong> 
+                                                            <span class="woocommerce-review__dash">–</span> 
+                                                            <time class="woocommerce-review__published-date color-green" datetime="<%= comments[i].createdAt %>"><%comments[i].createdAt %></time>
+                                                        </p>
+
+                                                        <div class="description">
+                                                            <p class="xs-content-description fundpress-content-description"><%= comments[i].comment %></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </li>
+
+                                                <% i++;if(i==comments.length)break; %>
+
+
+                                                <li class="comment odd thread-odd">
+                                                <div class="comment_container clearfix">
+                                                    <img alt="comment avatar" class="avatar" src="/assets/images/avatar/avatar_2.jpg">
+                                                    <div class="comment-text">
+                                                        <div class="star-rating">
+                                                            Rated <strong class="rating"><%comments[i].rating %></strong> out of 5
+                                                        </div>
+                                                        <p class="meta">
+                                                            <strong class="woocommerce-review__author"><%comments[i].author.username %></strong> 
+                                                            <span class="woocommerce-review__dash">–</span> 
+                                                            <time class="woocommerce-review__published-date" datetime="<%comments[i].createdAt %>"><%comments[i].createdAt %></time>
+                                                        </p>
+                                                        <div class="description">
+                                                            <p class="xs-content-description"><%comments[i].comment %></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </li><!-- #comment-## -->
+                                            
+                                            <% 
+                                                }
+                                            }
+                                            else{%>
+                                            <li class="comment even thread-even
+                                            ">
+                                                <div class="comment_container clearfix">
+                                                    <img alt="comment avatar" class="avatar" src="/assets/images/avatar/avatar_1.jpg">
+                                                    <div class="comment-text">
+                                                        <div class="star-rating">
+                                                            Rated <strong class="rating">5</strong> out of 5
+                                                        </div>
+                                                        <p class="meta">
+                                                            <strong class="woocommerce-review__author color-navy-blue">Stuart</strong> 
+                                                            <span class="woocommerce-review__dash">–</span> 
+                                                            <time class="woocommerce-review__published-date color-green" datetime="2013-06-07T13:01:25+00:00">June 7, 2020</time>
+                                                        </p>
+
+                                                        <div class="description">
+                                                            <p class="xs-content-description fundpress-content-description">My Got to phone with all the latest features. I love it.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li><!-- #comment-## -->
+                                            <li class="comment odd thread-odd">
+                                                <div class="comment_container clearfix">
+                                                    <img alt="comment avatar" class="avatar" src="/assets/images/avatar/avatar_2.jpg">
+                                                    <div class="comment-text">
+                                                        <div class="star-rating">
+                                                            Rated <strong class="rating">5</strong> out of 5
+                                                        </div>
+                                                        <p class="meta">
+                                                            <strong class="woocommerce-review__author">Maria</strong> 
+                                                            <span class="woocommerce-review__dash">–</span> 
+                                                            <time class="woocommerce-review__published-date" datetime="2013-06-07T15:49:53+00:00">April 7, 2020</time>
+                                                        </p>
+                                                        <div class="description">
+                                                            <p class="xs-content-description">Love this phone! The ninja near and dear to my heart. &lt;3</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li><!-- #comment-## -->
+                                        <%}%>
+                                        </ol>
+                                    </div>
+                                    <div id="review_form_wrapper">
+                                        <div id="review_form">
+                                            <div id="respond" class="comment-respond">	
+                                                
+                                                <form action="/product/<%= product_id %>/comment" method="post" id="commentform" class="comment-form" novalidate="">
+                                                    <p class="comment-notes">
+                                                        <span id="email-notes">Your email address will not be published.
+                                                        </span> Required fields are marked 
+                                                        <span class="required">*</span>
+                                                    </p>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="comment-form-author">
+                                                                <label for="author">Name 
+                                                                    <span class="required">*</span>
+                                                                </label> 
+                                                                <input id="author" name="author" type="text" value="" size="30" aria-required="true" required="">
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="comment-form-author">
+                                                                <label for="rating">rating
+                                                                    <span class="required">*</span>
+                                                                </label> 
+                                                                <input id="author" name="rating" type="text" value="" size="30" aria-required="true" required="">
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="comment-form-email">
+                                                                <label for="email">Email 
+                                                                    <span class="required">*</span>
+                                                                </label> 
+                                                                <input id="email" name="email" type="email" value="" size="30" aria-required="true" required="">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="comment-form-rating">
+                                                        <p>Your rating</p>
+                                                        <span class="star-rating"></span>
+                                                    </div>
+
+                                                    <p class="comment-form-comment xs-mb-30">
+                                                        <label for="comment">Your review 
+                                                            <span class="required">*</span>
+                                                        </label>
+                                                        <textarea id="comment" name="comment" cols="45" rows="8" required=""></textarea>
+                                                    </p>
+                                                    <p class="form-submit">
+                                                        <input name="submit" type="submit" id="submit" class="submit" value="Submit">
+                                                    </p>
+                                                </form>
+                                            </div><!-- #respond -->
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane animated slideInUp" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                <div class="shipping-info">
+                    <p class="caption-title">Calculate your shipping cost by country/region and quantity.</p>
+                    <table class="table shipping-table table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">Shipping Company</th>
+                                <th scope="col">Shipping Cost</th>
+                                <th scope="col">Estimated Delivery Time
+                                    <span class="help-tip">
+                                        <span class="help-tip-text">If you finish the payment today, your order will arrive within the estimated delivery time.</span>
+                                    </span>
+                                </th>
+                                <th scope="col">Tracking Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Flipi Registered Air Mail</td>
+                                <td>Rs 200 <del>Rs 500</del> <span>You save: <mark>Rs 300.</mark></span></td>
+                                <td>20-38 days (It may take longer during the holiday seasons.)</td>
+                                <td>Not available</td>
+                            </tr>
+                            <tr>
+                                <td>SuperMail Registered Air Mail</td>
+                                <td>Rs 250 <del>Rs 650</del> <span>You save: <mark>Rs 400</mark></span></td>
+                                <td>30-48 days (It may take longer during the holiday seasons.)</td>
+                                <td>Not available</td>
+                            </tr>
+                            <tr>
+                                <td>Post Office</td>
+                                <td>Rs 300 <del>Rs 400</del> <span>You save: <mark>Rs 100</mark></span></td>
+                                <td>8-10 days (It may take longer during the holiday seasons.)</td>
+                                <td>Not available</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane animated slideInUp" id="guarantees" role="tabpanel" aria-labelledby="guarantees-tab">
+                <div class="border rounded seller-detail">
+                    <h5>Return Policy</h5>
+                    <p>If the product you receive is not as described or low quality, the seller promises that you may return it before order completion (when you click ‘Confirm Order Received’ or exceed confirmation timeframe), receive a full refund, and that the return shipping fee will be paid by the seller. Details of the shipping method and fee payment should be agreed with the seller in advance. Or, you can choose to keep the product and agree the refund amount directly with the seller.</p>
+                </div>
+                <div class="border rounded seller-detail">
+                    <h5>Seller Service</h5>
+                    <p>If you do not receive your purchase within 60 days, you can ask for a full refund before order completion (when you click ‘Confirm Order Received’ or exceed confirmation timeframe).</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- .container END -->
+</div><!-- end product details section -->
+
+<!-- product info section -->
+<section class="xs-section-padding bg-gray">
+    <div class="container">
+        <div class="xs-content-header version-2">
+            <h2 class="xs-content-title">Recent Products</h2>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="xs-product-wraper version-2">
+                    <div class="xs-product-header media">
+                        <span class="star-rating d-flex">
+                            <span class="value">(23+)</span>
+                        </span>
+                        <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                        </a>
+                    </div><!-- .xs-product-header END -->
+                    <img src="https://drop.ndtv.com/TECH/product_database/images/913201720152AM_635_iphone_x.jpeg" alt="Mobile">
+                    <div class="xs-product-content text-center">
+                        <span class="product-categories">
+                            <a href="#" rel="tag">Mobile</a>
+                        </span>
+                        <h4 class="product-title"><a href="product-details.html">iPhone X Brand Multivendor Device</a></h4>
+                        <span class="price">
+                            Rs70000.00
+                            <del>Rs90000.00</del>
+                        </span>
+                    </div><!-- .xs-product-content END -->
+                    <div class="xs-product-hover-area clearfix">
+                        <div class="float-left">
+                            <a href="#"><i class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+                        </div>
+                        <div class="float-right">
+                            <a href="#"><i class="icon icon-shuffle-arrow"></i>Compare</a>
+                        </div>
+                    </div>
+                </div><!-- .xs-product-wraper .version-2 END -->
+            </div>  
+            <div class="col-md-6 col-lg-3">
+                <div class="xs-product-wraper version-2">
+                    <div class="xs-product-header media">
+                        <span class="star-rating d-flex">
+                            <span class="value">(23+)</span>
+                        </span>
+                        <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                        </a>
+                    </div><!-- .xs-product-header END -->
+                    <img src="/assets/images/253x201/product_2_253x201.jpg" alt="Mobile">
+                    <div class="xs-product-content text-center">
+                        <span class="product-categories">
+                            <a href="#" rel="tag">Laptop</a>
+                        </span>
+                        <h4 class="product-title"><a href="product-details.html">Apple Mac Laptop - Retina Display 14”</a></h4>
+                        <span class="price">
+                            Rs90000.00
+                            <del>Rs150000.00</del>
+                        </span>
+                    </div><!-- .xs-product-content END -->
+                    <div class="xs-product-hover-area clearfix">
+                        <div class="float-left">
+                            <a href="#"><i class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+                        </div>
+                        <div class="float-right">
+                            <a href="#"><i class="icon icon-shuffle-arrow"></i>Compare</a>
+                        </div>
+                    </div>
+                </div><!-- .xs-product-wraper .version-2 END -->
+            </div>  
+            <div class="col-md-6 col-lg-3">
+                <div class="xs-product-wraper version-2">
+                    <div class="xs-product-header media">
+                        <span class="star-rating d-flex">
+                            <span class="value">(23+)</span>
+                        </span>
+                        <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                        </a>
+                    </div><!-- .xs-product-header END -->
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/61l-AZ10RtL._SL1500_.jpg" alt="Mobile">
+                    <div class="xs-product-content text-center">
+                        <span class="product-categories">
+                            <a href="#" rel="tag">Electronics</a>
+                        </span>
+                        <h4 class="product-title"><a href="product-details.html">Bose - Earphone bluetooth</a></h4>
+                        <span class="price">
+                            Rs44000.00
+                            <del>Rs8000.00</del>
+                        </span>
+                    </div><!-- .xs-product-content END -->
+                    <div class="xs-product-hover-area clearfix">
+                        <div class="float-left">
+                            <a href="#"><i class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+                        </div>
+                        <div class="float-right">
+                            <a href="#"><i class="icon icon-shuffle-arrow"></i>Compare</a>
+                        </div>
+                    </div>
+                </div><!-- .xs-product-wraper .version-2 END -->
+            </div>  
+            <div class="col-md-6 col-lg-3">
+                <div class="xs-product-wraper version-2">
+                    <div class="xs-product-header media">
+                        <span class="star-rating d-flex">
+                            <span class="value">(23+)</span>
+                        </span>
+                        <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                        </a>
+                    </div><!-- .xs-product-header END -->
+                    <img src="https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa75e0cfc/JBL_Go2_Hero_Midnight_Black-1605x1605px.png" alt="Mobile">
+                    <div class="xs-product-content text-center">
+                        <span class="product-categories">
+                            <a href="#" rel="tag">Electronics</a>
+                        </span>
+                        <h4 class="product-title"><a href="product-details.html">JBL Speaker - Without Charge</a></h4>
+                        <span class="price">
+                            Rs7000.00
+                            <del>Rs9000.00</del>
+                        </span>
+                    </div><!-- .xs-product-content END -->
+                    <div class="xs-product-hover-area clearfix">
+                        <div class="float-left">
+                            <a href="#"><i class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+                        </div>
+                        <div class="float-right">
+                            <a href="#"><i class="icon icon-shuffle-arrow"></i>Compare</a>
+                        </div>
+                    </div>
+                </div><!-- .xs-product-wraper .version-2 END -->
+            </div>  
+        </div><!-- .row END -->
+    </div><!-- .container END -->
+</section><!-- end product info section -->
+
+<!-- brand list section -->
+<div class="xs-brand-section border-top-0">
+    <div class="container">
+        <ul class="xs-brand-content clearfix">
+            <li><a href="#"><img src="/assets/images/image_loader.gif" data-echo="/assets/images/sponsors/sponsors_1.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/image_loader.gif" data-echo="/assets/images/sponsors/sponsors_2.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/image_loader.gif" data-echo="/assets/images/sponsors/sponsors_3.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/image_loader.gif" data-echo="/assets/images/sponsors/sponsors_4.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/image_loader.gif" data-echo="/assets/images/sponsors/sponsors_5.png" alt=""></a></li>
+        </ul>
+    </div><!-- .container END -->
+</div><!-- end brand list section -->
+
+<%- include('partials/footer'); -%>
+		<!-- js file start -->
+		<script src="/assets/js/jquery-3.2.1.min.js"></script>
+		<script src="/assets/js/jquery-ui.js"></script>
+		<script src="/assets/js/modernizr.js"></script>
+		<script src="/assets/js/plugins.js"></script>
+		<script src="/assets/js/Popper.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/isotope.pkgd.min.js"></script>
+		<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="/assets/js/owl.carousel.min.js"></script>
+		<script src="/assets/js/jquery.menu-aim.js"></script>
+		<script src="/assets/js/vertical-menu.js"></script>
+		<script src="/assets/js/tweetie.js"></script>
+		<script src="/assets/js/echo.min.js"></script>
+		<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+		<script src="/assets/js/jquery.countdown.min.js"></script>
+		<script src="/assets/js/jquery.waypoints.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+		<script src="/assets/js/spectragram.min.js"></script>
+		<script src="/assets/js/main.js"></script>		<!-- End js file -->
+	</body>
+</html>

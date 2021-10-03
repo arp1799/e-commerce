@@ -1,0 +1,2516 @@
+<!-- get_header('Page Name','Title')-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Shop</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="favicon.html" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.html" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/jquery-ui.css" />
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/iconfont.css" />
+    <link rel="stylesheet" href="/assets/css/isotope.css" />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/assets/css/vertical-menu.css" />
+    <link rel="stylesheet" href="/assets/css/navigation.min.css" />
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="/assets/css/plugins.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="/assets/css/all_product.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <%- include('partials/other_page_header'); -%>
+    <!-- welcome section -->
+    <!--breadcumb start here-->
+    <div class="xs-breadcumb">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+            <li class="breadcrumb-item">
+              <a href="product-category.html">All Categories </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="product-category.html">Computer & Office </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!--breadcumb end here--><!-- End welcome section -->
+
+    <!-- shop section -->
+    <section class="xs-section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3">
+            <!-- shop sidebar -->
+            <div class="shop-category">
+              <div class="widget widget_range">
+                <div class="price_label media">
+                  <label for="amount">Filter:</label>
+                  <input type="text" id="amount" readonly />
+                </div>
+                <div id="slider-range"></div>
+              </div>
+              <!-- .widget .widget_range END -->
+              <div class="widget widget_cate">
+                <h5 class="widget-title">Screen Size</h5>
+                <form action="#" method="POST" class="shop_cate_form">
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="tenInch"
+                    />
+                    <label class="custom-control-label" for="tenInch"
+                      >10"<span>(68)</span></label
+                    >
+                  </div>
+                  <!-- .custom-control custom-checkbox END -->
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="nineSeven"
+                    />
+                    <label class="custom-control-label" for="nineSeven"
+                      >9.7"<span>(5)</span></label
+                    >
+                  </div>
+                  <!-- .custom-control custom-checkbox END -->
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="tenOneInch"
+                    />
+                    <label class="custom-control-label" for="tenOneInch"
+                      >10.1"<span>(7)</span></label
+                    >
+                  </div>
+                  <!-- .custom-control custom-checkbox END -->
+                </form>
+              </div>
+              <!-- .widget .widget_cate END -->
+              <div class="widget widget_cate">
+                <h5 class="widget-title">Operating System</h5>
+                <form action="#" method="POST" class="shop_cate_form">
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="android_7"
+                    />
+                    <label class="custom-control-label" for="android_7"
+                      >Android 7.0 <span>(2)</span></label
+                    >
+                  </div>
+                  <!-- .custom-control custom-checkbox END -->
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="android_6"
+                    />
+                    <label class="custom-control-label" for="android_6"
+                      >Android 6.0<span>(50)</span></label
+                    >
+                  </div>
+                  <!-- .custom-control custom-checkbox END -->
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="android_5"
+                    />
+                    <label class="custom-control-label" for="android_5"
+                      >Android 5.0<span>(70)</span></label
+                    >
+                  </div>
+                  <!-- .custom-control custom-checkbox END -->
+                </form>
+              </div>
+              <!-- .widget .widget_cate END -->
+              <div class="widget widget_cate">
+                <h5 class="widget-title">Data Capacity</h5>
+                <form action="#" method="POST" class="shop_cate_form">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="sixty-four"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="sixty-four"
+                      >64<span>(15)</span></label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="thirty-two"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="thirty-two"
+                      >32<span>(20)</span></label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="sixteen"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="sixteen"
+                      >16<span>(18)</span></label
+                    >
+                  </div>
+                </form>
+              </div>
+              <!-- .widget .widget_cate END -->
+              <div class="widget widget_rate">
+                <h5 class="widget-title">Rating</h5>
+                <form action="#" method="POST" class="shop_cate_form">
+                  <ul class="rate-list">
+                    <li>
+                      <span class="star-rating" data-value="5"
+                        ><b>(28)</b></span
+                      >
+                    </li>
+                    <li>
+                      <span class="star-rating" data-value="4"
+                        ><b>(18)</b></span
+                      >
+                    </li>
+                    <li>
+                      <span class="star-rating" data-value="3"
+                        ><b>(10)</b></span
+                      >
+                    </li>
+                    <li>
+                      <span class="star-rating" data-value="2"><b>(8)</b></span>
+                    </li>
+                    <li>
+                      <span class="star-rating" data-value="1"><b>(5)</b></span>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+              <!-- .widget .widget_cate END -->
+              <div class="widget widget_banner">
+                <img
+                  src="/assets/images/image_loader.gif"
+                  data-echo="/assets/images/web_banner/shop_offer_banner.png"
+                  alt=""
+                />
+              </div>
+              <!-- .widget .widget_banner END -->
+            </div>
+            <!-- End shop sidebar -->
+          </div>
+          <div class="col-md-9 col-lg-9">
+            <div class="shop-cate-list">
+              <div class="shop-cate-title">
+                <!-- <h5>Shop</h5> -->
+
+                <div class="listings">
+                  <nav aria-label="...">
+                    <ul class="d-flex">
+                      <li class="page-item active" aria-current="page">
+                        <span class="page-link">
+                          All Listings
+                          <span class="sr-only">(current)</span>
+                        </span>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="shop_auction.html"
+                          >Auction</a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="shop_buy.html">Buy Now</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <ul class="shop-catelist-item">
+                <li>
+                  <!-- COLOR CHANGE  -->
+                  <!-- <div class="media">
+                                <h6 class="d-flex">Color</h6>
+                                <div class="media-body">
+                                    <div class="custom-control custom-radio color-one">
+                                        <input type="radio" id="color_one" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="color_one"></label>
+                                    </div>
+                                    <div class="custom-control custom-radio color-two">
+                                        <input type="radio" id="color_two" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="color_two"></label>
+                                    </div>
+                                    <div class="custom-control custom-radio color-three">
+                                        <input type="radio" id="color_three" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="color_three"></label>
+                                    </div>
+                                    <div class="custom-control custom-radio color-four">
+                                        <input type="radio" id="color_four" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="color_four"></label>
+                                    </div>
+                                    <div class="custom-control custom-radio color-five">
+                                        <input type="radio" id="color_five" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="color_five"></label>
+                                    </div>
+                                    <div class="custom-control custom-radio color-six">
+                                        <input type="radio" id="color_six" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="color_six"></label>
+                                    </div>
+                                </div>
+                            </div> -->
+                </li>
+                <!-- <li>
+                            <div class="media">
+                                <h6 class="d-flex">View</h6>
+                                <ul class="nav nav-tabs shop-view-nav" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="list-th-tab" data-toggle="tab" href="#list-th" role="tab" aria-controls="list-th" aria-selected="true"><i class="fa fa-th"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="list-justify-tab" data-toggle="tab" href="#list-justify" role="tab" aria-controls="list-justify" aria-selected="false"><i class="fa fa-align-justify"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false"><i class="fa fa-list"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="list-small-tab" data-toggle="tab" href="#listSmall" role="tab" aria-controls="listSmall" aria-selected="false"><i class="fa fa-th-list"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> -->
+                <li>
+                  <form action="#" method="POST">
+                    <select name="productOrder" class="product-ordering">
+                      <option value="menu_order" selected="selected">
+                        Default sorting
+                      </option>
+                      <option value="sort_popularity">Sort by popular</option>
+                      <option value="sort_by_rating">
+                        Sort by average rate
+                      </option>
+                      <option value="sort_by_date">Sort by new item</option>
+                      <option value="sort_by_price">
+                        Sort by price: low to high
+                      </option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="list-th"
+                role="tabpanel"
+                aria-labelledby="list-th-tab"
+              >
+                <div class="row category-v4">
+                  <% for(var i=0;i<products.length;i++){%>
+                    <div class="col-md-4">
+                      <div class="xs-product-wraper">
+                        <img
+                          src="<%= products[i].productdetail.avatar[0] %>"
+                          alt="<%= products[i].productdetail.productname %>"
+                          style="height: 189px;width: 253px;"
+                        />
+                        <div class="xs-product-content">
+                          <span class="product-categories">
+                            <a href="/product/id/<%= products[i]._id %>" rel="tag"><%= products[i].productdetail.brand %></a>
+                          </span>
+                          <h4 class="product-title">
+                            <a href="/product/id/<%= products[i]._id %>"><%= products[i].productdetail.productname %></a>
+                          </h4>
+                          <span class="price version-2">
+                            Rs.<%= products[i].productdetail.price %>.00
+                            <del>Rs.<%= products[i].productdetail.price + 100 %>+.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                    </div>
+                   <%}%>
+                  
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_2_253x189.jpg"
+                        alt="Laptop"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Laptop</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html">Xbox Gaming Laptop</a>
+                        </h4>
+                        <span class="price version-2"> Rs.880.00 </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_3_253x189.jpg"
+                        alt="Wireless Speaker"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Wireless Speaker</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >JBL Portable Wireless</a
+                          >
+                        </h4>
+                        <span class="price version-2"> Rs.650.00 </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_4_253x189.jpg"
+                        alt="Camera"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Camera</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html">4K HDT Camera</a>
+                        </h4>
+                        <span class="price version-2"> Rs.546.00 </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_5_253x189.jpg"
+                        alt="Projector"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Projector</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Philips Pure Projector</a
+                          >
+                        </h4>
+                        <span class="price version-2">
+                          Rs.978.00
+                          <del>Rs.1000.00</del>
+                        </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_6_253x189.jpg"
+                        alt="Watch"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Watch</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html">Xaomi Hand Watch</a>
+                        </h4>
+                        <span class="price version-2">
+                          Rs.800.00
+                          <del>Rs.1200.00</del>
+                        </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_7_253x189.jpg"
+                        alt="Speaker"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Speaker</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html">Logitech Speaker v7</a>
+                        </h4>
+                        <span class="price version-2">
+                          Rs.322.00
+                          <del>Rs.760.00</del>
+                        </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_8_253x189.jpg"
+                        alt="Apple Watch"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Apple Watch</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html">Retina Apple Watch</a>
+                        </h4>
+                        <span class="price version-2">
+                          Rs.990.00
+                          <del>Rs.1800.00</del>
+                        </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_9_253x189.jpg"
+                        alt="Laptop"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Laptop</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html">SurfaceBook Laptop</a>
+                        </h4>
+                        <span class="price version-2">
+                          Rs.2240.00
+                          <del>Rs.5000.00</del>
+                        </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_10_253x189.jpg"
+                        alt="Headphone"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Headphone</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html">Wireless Headphone</a>
+                        </h4>
+                        <span class="price version-2"> Rs.432.00 </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_11_253x189.jpg"
+                        alt="Camera"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Camera</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Canon Digital Camera</a
+                          >
+                        </h4>
+                        <span class="price version-2">
+                          Rs.945.00
+                          <del>Rs.1000.00</del>
+                        </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="xs-product-wraper">
+                      <img
+                        src="/assets/images/253x189/product_12_253x189.jpg"
+                        alt="Console"
+                      />
+                      <div class="xs-product-content">
+                        <span class="product-categories">
+                          <a href="#" rel="tag">Console</a>
+                        </span>
+                        <h4 class="product-title">
+                          <a href="product-details.html">xBox Gaming Console</a>
+                        </h4>
+                        <span class="price version-2"> Rs.232.00 </span>
+                      </div>
+                      <!-- .xs-product-content END -->
+                    </div>
+                  </div>
+                </div>
+                <!-- .row END -->
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-justify"
+                role="tabpanel"
+                aria-labelledby="list-justify-tab"
+              >
+                <div class="row feature-product-v4">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_1_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >SUHD TV Quantity 62” Display</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.677.00
+                            <del>Rs.999.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_2_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Apple Watch Retina 4” Display</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.223.00
+                            <del>Rs.400.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group .xs-list-group end -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_3_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Surface Book Air Trifold</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.449.00
+                            <del>Rs.700.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group xs-list-group END -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_4_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Virtual Box Iconic Free Hand</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.309.00
+                            <del>Rs.400.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group xs-list-group END -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_5_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Snapshot Aqua Photograph</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.334.00
+                            <del>Rs.499.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group xs-list-group END -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_6_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Dell Inspiration Vio 16.5” Laptop</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.450
+                            <del>Rs.999.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group xs-list-group END -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_7_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Philips Retina Projector</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.345.00
+                            <del>Rs.400.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group xs-list-group END -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_8_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Jazz Buzz Evolution Jakas Headphone</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.545.00
+                            <del>Rs.670.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group xs-list-group END -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_1_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >SUHD TV Quantity 62” Display</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.677.00
+                            <del>Rs.999.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_2_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Apple Watch Retina 4” Display</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.223.00
+                            <del>Rs.400.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group .xs-list-group end -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_3_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Surface Book Air Trifold</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.449.00
+                            <del>Rs.700.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group xs-list-group END -->
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="xs-single-product">
+                      <div class="xs-product-wraper text-center">
+                        <img
+                          src="/assets/images/234x180/product_4_234x180.jpg"
+                          alt="Lamp"
+                        />
+                        <ul class="product-item-meta">
+                          <li>
+                            <a href="#" class="ajax_add_to_cart"
+                              ><i class="icon icon-online-shopping-cart"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target=".xs-quick-view-modal"
+                              ><i class="icon icon-medical2"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="icon icon-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon icon-shuffle-arrow"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="xs-product-content">
+                          <h4 class="product-title">
+                            <a href="product-details.html"
+                              >Virtual Box Iconic Free Hand</a
+                            >
+                          </h4>
+                          <span class="price">
+                            Rs.309.00
+                            <del>Rs.400.00</del>
+                          </span>
+                        </div>
+                        <!-- .xs-product-content END -->
+                      </div>
+                      <!-- .xs-product-wraper .version-3 END -->
+                      <ul class="list-group xs-list-group">
+                        <li class="d-flex justify-content-between">
+                          Display<span>5″ AMOLED</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Processor<span>Snapdragon 821</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          OS Provided<span>Android 7</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          Internal Memory<span>32GB</span>
+                        </li>
+                      </ul>
+                      <!-- .list-group xs-list-group END -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade xs-mb-30"
+                id="list"
+                role="tabpanel"
+                aria-labelledby="list-tab"
+              >
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_1_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Samsung Gear VR Vituarl Reality</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.340.00
+                          <del>Rs.460.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_2_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Codaline Minimal Retina Speaker</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.223.00
+                          <del>Rs.400.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_3_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >SUHD TV Full 62” Retina Display</a
+                          >
+                        </h4>
+                        <span class="price"> Rs.998.00 </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_4_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Canon 4K Minimal Camera</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.445.00
+                          <del>Rs.922.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_5_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Acer 22” Monitor Retina Display</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.456.00
+                          <del>Rs.599.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_6_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Asus VR 15.5”Retina Laptop</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.456.00
+                          <del>Rs.599.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_1_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Samsung Gear VR Vituarl Reality</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.340.00
+                          <del>Rs.460.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_2_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Codaline Minimal Retina Speaker</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.223.00
+                          <del>Rs.400.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                  </div>
+                  <div class="col-md-6">
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_1_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Samsung Gear VR Vituarl Reality</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.340.00
+                          <del>Rs.460.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_2_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Codaline Minimal Retina Speaker</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.223.00
+                          <del>Rs.400.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_3_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >SUHD TV Full 62” Retina Display</a
+                          >
+                        </h4>
+                        <span class="price"> Rs.998.00 </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_4_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Canon 4K Minimal Camera</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.445.00
+                          <del>Rs.922.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_5_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Acer 22” Monitor Retina Display</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.456.00
+                          <del>Rs.599.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_6_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Asus VR 15.5”Retina Laptop</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.456.00
+                          <del>Rs.599.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_1_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Samsung Gear VR Vituarl Reality</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.340.00
+                          <del>Rs.460.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                    <div class="xs-product-widget media">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/125x142/product_2_125x142.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <div class="xs-product-header media">
+                          <span class="star-rating d-flex"></span>
+                          <a href="#" class="add_to_wishlist media-body">
+                            <i class="icon icon-heart"></i>
+                          </a>
+                        </div>
+                        <!-- .xs-product-header END -->
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Codaline Minimal Retina Speaker</a
+                          >
+                        </h4>
+                        <span class="price">
+                          Rs.223.00
+                          <del>Rs.400.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content END -->
+                    </div>
+                    <!-- .xs-product-widget END -->
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="listSmall"
+                role="tabpanel"
+                aria-labelledby="list-small-tab"
+              >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_1_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html">iPhone X 64GB LTE</a>
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.76.00
+                          <del>Rs.100.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_2_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_3_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_4_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html">iPhone X 64GB LTE</a>
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.76.00
+                          <del>Rs.100.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_5_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_6_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_7_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html">iPhone X 64GB LTE</a>
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.76.00
+                          <del>Rs.100.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_8_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_9_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_10_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html">iPhone X 64GB LTE</a>
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.76.00
+                          <del>Rs.100.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_11_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_12_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_1_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_2_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_1_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html">iPhone X 64GB LTE</a>
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.76.00
+                          <del>Rs.100.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_2_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_3_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_4_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html">iPhone X 64GB LTE</a>
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.76.00
+                          <del>Rs.100.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_5_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_6_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_7_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html">iPhone X 64GB LTE</a>
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.76.00
+                          <del>Rs.100.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_8_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_9_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_10_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html">iPhone X 64GB LTE</a>
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.76.00
+                          <del>Rs.100.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_11_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_12_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_1_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Smartphone 6S 128GB LTE</a
+                          >
+                        </h4>
+                        <span class="price color-primary"> Rs.342.00 </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                    <div class="xs-product-widget media version-2">
+                      <img
+                        class="d-flex"
+                        src="/assets/images/71x70/product_2_71x70.jpg"
+                        alt="Mobile"
+                      />
+                      <div
+                        class="media-body align-self-center product-widget-content"
+                      >
+                        <h4 class="product-title small">
+                          <a href="product-details.html"
+                            >Tablet Thin EliteBook Revolve</a
+                          >
+                        </h4>
+                        <span class="price color-primary">
+                          Rs.235.00
+                          <del>Rs.290.00</del>
+                        </span>
+                      </div>
+                      <!-- .product-widget-content .version-2 END -->
+                    </div>
+                  </div>
+                </div>
+                <!-- .row END -->
+              </div>
+            </div>
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1"
+                  ><i class="icon icon-double-left-chevron"></i
+                ></a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#">...</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"
+                  ><i class="icon icon-double-angle-pointing-to-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- .row END -->
+      </div>
+      <!-- .container END -->
+    </section>
+
+    <!-- quickView -->
+    <!-- Modal -->
+    <div
+      class="xs-modal xs-quick-view-modal modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span class="icon icon-cross"></span>
+          </button>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="images">
+                  <img
+                    src="/assets/images/lenovo-yoga-720-15-png-01.png"
+                    alt="Product"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="summary-content entry-summary">
+                  <h3 class="entry-title">Hitech Innovations</h3>
+                  <h4 class="product-title">
+                    Zboom 27-inch with Retina 5K display
+                  </h4>
+                  <p>
+                    Choose the colour that best reflects your personality and it
+                    will become your best companion during your everyday
+                    activities.
+                  </p>
+                  <span class="star-rating color-green">
+                    <span class="value">(200 Customers review)</span>
+                  </span>
+                  <span class="price highlight">
+                    <del>Rs.590.00</del>
+                    Rs.370.00
+                  </span>
+                  <div class="xs-add-to-chart-form row">
+                    <div class="col-md-8">
+                      <form action="#">
+                        <div class="w-quantity quantity xs_input_number">
+                          <input type="number" min="1" max="100" value="1" />
+                        </div>
+                        <div class="w-quantity-btn">
+                          <input type="hidden" name="add-to-cart" value="605" />
+                          <button
+                            type="submit"
+                            class="single_add_to_cart_button btn btn-primary"
+                          >
+                            Add To Cart
+                          </button>
+                        </div>
+                        <div class="clearfix"></div>
+                      </form>
+                    </div>
+                    <div class="col-md-2">
+                      <a href="#" class="xs-wishlist-and-compare"
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                    <div class="col-md-2">
+                      <a href="#" class="xs-wishlist-and-compare"
+                        ><i
+                          class="icon icon-shuffle-arrow"
+                          aria-hidden="true"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                  <ul class="xs-social-list">
+                    <li class="xs-list-text">Follow Us</li>
+                    <li>
+                      <a href="#"><i class="icon icon-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="icon icon-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="icon icon-pinterest"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end quickView --><!-- End shop section -->
+    <%- include('partials/footer'); -%>
+    <!-- js file start -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
+    <script src="/assets/js/modernizr.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/Popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.menu-aim.js"></script>
+    <script src="/assets/js/vertical-menu.js"></script>
+    <script src="/assets/js/tweetie.js"></script>
+    <script src="/assets/js/echo.min.js"></script>
+    <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/assets/js/jquery.countdown.min.js"></script>
+    <script src="/assets/js/jquery.waypoints.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+    <script src="/assets/js/spectragram.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- End js file -->
+  </body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .container {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .buttons {
+      width: 68%;
+      height: 16%;
+      border-radius: 5px;
+      background-color: #ffbb99;
+      padding-right: 10%;
+      margin-left: 120px;
+    }
+
+    .buttons:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    .card-body {
+      padding-right: 50px;
+    }
+
+    .buttons1 {
+      width: 68%;
+      height: 16%;
+      border-radius: 5px;
+      background-color: #e6e6e6;
+      padding-right: 10%;
+      margin-left: 120px;
+    }
+
+    .portion {
+      margin-bottom: 20px;
+    }
+
+    .buy-button {
+      width: 68%;
+      height: 16%;
+      border-radius: 5px;
+      background-color: #ffbb99;
+      padding-right: 10%;
+    }
+    li {
+      display: inline;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    .right1 {
+      margin-left: 50%;
+    }
+
+    .links {
+      text-decoration: none;
+      padding-right: 10px;
+    }
+
+    .submit-btn {
+      background-color: black;
+      color: white;
+    }
+
+    .acc {
+      color: rgb(88, 162, 247);
+      font-weight: bold;
+    }
+
+    .ord {
+      color: #ffbb99;
+      font-weight: bold;
+    }
+    .card-img-top {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+    }
+
+    .card-desc {
+      box-sizing: border-box;
+      height: 80px;
+    }
+  </style>
+  <head>
+    <title>Order History: orders</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="orders.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper">
+        <span
+          ><span class="acc">Your Account</span
+          ><i class="glyphicon glyphicon-menu-right account-icon"></i
+          ><span class="ord">Your Orders</span></span
+        >
+        <div class="row" style="margin-top: 5px">
+          <div class="col-sm-4 left1">
+            <h5 style="font-size: 5vh"><b>Your Orders</b></h5>
+          </div>
+          <div class="col-sm-8 right1">
+            <div class="search-container">
+              <form action="/action_page.php">
+                <button style="background-color: #ffbb99">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+
+                <input
+                  type="text"
+                  placeholder="Search all orders"
+                  name="search"
+                  style="width: 45%"
+                />
+                <button type="submit" class="submit-btn">Search Orders</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <a href="#" target="blank" class="links">Orders</a>
+          <a href="#" target="blank" class="links">Buy Again</a>
+          <a href="#" target="blank" class="links">Open Orders</a>
+          <a href="#" target="blank" class="links active">Cancelled Orders</a>
+        </div>
+        <hr style="margin-top: 2px" />
+      </div>
+      <div class="mid-portion">
+        <div class="card portion">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <p class="nav-link" href="#">
+                  ORDER PLACED<br />22 September 2020
+                </p>
+              </li>
+              <li
+                class="nav-item"
+                style="margin-left: 30px; margin-right: 30px"
+              >
+                <p class="nav-link" href="#">
+                  TOTAL<br /><i class="fa fa-rupee"></i>1499.00
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link" href="#">
+                  SHIP TO<br /><span style="color: rgb(88, 162, 247)"
+                    >Vanshika </span
+                  ><span
+                    class="glyphicon glyphicon-chevron-down"
+                    style="padding-left: 5px"
+                  ></span>
+                </p>
+              </li>
+              <li class="nav-item navbar-nav ml-auto">
+                <span
+                  >ORDER # 48722-38662222-19283654<br /><a
+                    style="color: rgb(88, 162, 247)"
+                    >Order details</a
+                  ><span style="margin-left: 8px; margin-right: 8px">|</span
+                  ><a style="color: rgb(88, 162, 247)">Invoice</a
+                  ><span
+                    class="glyphicon glyphicon-chevron-down"
+                    style="padding-left: 6px"
+                  ></span
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="arrive">
+              <div class="left">
+                <h4 class="card-title"><b>Arriving 29 Sep - 3 Oct</b></h4>
+              </div>
+              <h5>Preparing for Dispatch</h5>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      src="image/image1.jpg"
+                      style="width: 23vh; height: 23vh"
+                    />
+                  </div>
+                  <div class="col-sm-4">
+                    <h5 style="color: rgb(14, 7, 82); font-size: 2.4vh">
+                      boAt Rockerz 255 Sports Wireless Headset with Super Extra
+                      Bass, IPX5 Water & Sweat Resistance, Qualcomm Chipset and
+                      Up to 6H Playback (Ocean Blue)
+                    </h5>
+                    <h5>
+                      Sold by:
+                      <span style="color: rgb(14, 7, 82)"
+                        >Appiro Retail Private ltd.</span
+                      >
+                    </h5>
+                    <br /><span style="font-size: 3vh"
+                      >Price:<i class="fa fa-rupee"></i>1499</span
+                    >
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="buttons">Track package</button>
+                    <button class="buttons1" style="margin-top: 12px">
+                      Cancel Items
+                    </button>
+                    <button class="buttons1" style="margin-top: 3px">
+                      Archieve order
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card portion">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <p class="nav-link" href="#">ORDER PLACED<br />03 April 2019</p>
+              </li>
+              <li
+                class="nav-item"
+                style="margin-left: 30px; margin-right: 30px"
+              >
+                <p class="nav-link" href="#">
+                  TOTAL<br /><i class="fa fa-rupee"></i>999.00
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link" href="#">
+                  SHIP TO<br /><span style="color: rgb(88, 162, 247)"
+                    >Vanshika </span
+                  ><span
+                    class="glyphicon glyphicon-chevron-down"
+                    style="padding-left: 5px"
+                  ></span>
+                </p>
+              </li>
+              <li class="nav-item navbar-nav ml-auto">
+                <span
+                  >ORDER # 48722-38662222-19283654<br /><a
+                    style="color: rgb(88, 162, 247)"
+                    >Order details</a
+                  ><span style="margin-left: 8px; margin-right: 8px">|</span
+                  ><a style="color: rgb(88, 162, 247)">Invoice</a
+                  ><span
+                    class="glyphicon glyphicon-chevron-down"
+                    style="padding-left: 6px"
+                  ></span
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="arrive">
+              <div class="left">
+                <h4 class="card-title"><b>Return complete</b></h4>
+              </div>
+              <h5>your return is complete.</h5>
+              <a>when will i get my refund?</a>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      src="image/image2.jpg"
+                      style="width: 23vh; height: 23vh"
+                    />
+                  </div>
+                  <div class="col-sm-4">
+                    <h5 style="color: rgb(14, 7, 82); font-size: 2.4vh">
+                      POLESTAR"Noble Blue 32 Ltrs Casual bagpack/School
+                      Bag/Laptop Backpack
+                    </h5>
+                    <h5>
+                      Sold by:
+                      <span style="color: rgb(14, 7, 82)">POLESTER BAGS</span>
+                    </h5>
+                    <br /><span style="font-size: 3vh"
+                      >Price:<i class="fa fa-rupee"></i>999</span
+                    ><br />
+                    <button class="buy-button">
+                      <i
+                        class="glyphicon glyphicon-fire"
+                        style="margin-right: 10px"
+                      ></i
+                      >Buy it again
+                    </button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="buttons">View Return/Refund Status</button>
+                    <button class="buttons1" style="margin-top: 3px">
+                      Leave a delivery feedback
+                    </button>
+                    <button class="buttons1" style="margin-top: 3px">
+                      write a product review
+                    </button>
+                    <button class="buttons1" style="margin-top: 3px">
+                      Archieve order
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card portion">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <p class="nav-link" href="#">ORDER PLACED<br />12 june 2020</p>
+              </li>
+              <li
+                class="nav-item"
+                style="margin-left: 30px; margin-right: 30px"
+              >
+                <p class="nav-link" href="#">
+                  TOTAL<br /><i class="fa fa-rupee"></i>199.00
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link" href="#">
+                  SHIP TO<br /><span style="color: rgb(88, 162, 247)"
+                    >Vanshika </span
+                  ><span
+                    class="glyphicon glyphicon-chevron-down"
+                    style="padding-left: 5px"
+                  ></span>
+                </p>
+              </li>
+              <li class="nav-item navbar-nav ml-auto">
+                <span
+                  >ORDER # 5122-38662222-192834354<br /><a
+                    style="color: rgb(88, 162, 247)"
+                    >Order details</a
+                  ><span style="margin-left: 8px; margin-right: 8px">|</span
+                  ><a style="color: rgb(88, 162, 247)">Invoice</a
+                  ><span
+                    class="glyphicon glyphicon-chevron-down"
+                    style="padding-left: 6px"
+                  ></span
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    src="image/image3.jpg"
+                    style="width: 23vh; height: 23vh"
+                  />
+                </div>
+                <div class="col-sm-4">
+                  <h5 style="color: rgb(14, 7, 82); font-size: 2.4vh">
+                    The Alchemist Paperback – 17 October 2005 by Paulo Coelho
+                    (Author)
+                  </h5>
+
+                  <span style="font-size: 3vh">Kindle Edition</span>
+                  <h5>
+                    Sold by:
+                    <span style="color: rgb(14, 7, 82)">Cloudtail India</span>
+                  </h5>
+                  <span>Return Window closed on 20 June 2020</span>
+                </div>
+                <div class="col-sm-4">
+                  <button class="buttons1" style="margin-top: 35px">
+                    Content and devices
+                  </button>
+                  <button class="buttons1" style="margin-top: 3px">
+                    Write a product revie
+                  </button>
+                  <button class="buttons1" style="margin-top: 3px">
+                    Archieve order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card portion">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <p class="nav-link" href="#">
+                  ORDER PLACED<br />22 September 2020
+                </p>
+              </li>
+              <li
+                class="nav-item"
+                style="margin-left: 30px; margin-right: 30px"
+              >
+                <p class="nav-link" href="#">
+                  TOTAL<br /><i class="fa fa-rupee"></i>499.00
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link" href="#">
+                  SHIP TO<br /><span style="color: rgb(88, 162, 247)"
+                    >Vanshika </span
+                  ><span
+                    class="glyphicon glyphicon-chevron-down"
+                    style="padding-left: 5px"
+                  ></span>
+                </p>
+              </li>
+              <li class="nav-item navbar-nav ml-auto">
+                <span
+                  >ORDER # 48722-38662222-19283654<br /><a
+                    style="color: rgb(88, 162, 247)"
+                    >Order details</a
+                  ><span style="margin-left: 8px; margin-right: 8px">|</span
+                  ><a style="color: rgb(88, 162, 247)">Invoice</a
+                  ><span
+                    class="glyphicon glyphicon-chevron-down"
+                    style="padding-left: 6px"
+                  ></span
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="arrive">
+              <div class="left">
+                <h4 class="card-title"><b>Delivered 10-Feb-2019</b></h4>
+              </div>
+              <h5>Package was handled directly to a security guard</h5>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      src="image/image4.jpg"
+                      style="width: 23vh; height: 23vh"
+                    />
+                  </div>
+                  <div class="col-sm-4">
+                    <h5 style="color: rgb(14, 7, 82); font-size: 2.4vh">
+                      Deep Rooted (Oil On Canvas Painting By Madhukar Mahajan)
+                    </h5>
+                    <h5>
+                      Sold by:
+                      <span style="color: rgb(14, 7, 82)"
+                        >Madhukar Mahajan</span
+                      >
+                    </h5>
+                    <br /><span style="font-size: 3vh"
+                      >Price:<i class="fa fa-rupee"></i>499</span
+                    ><br />
+                    <button class="buy-button">
+                      <i
+                        class="glyphicon glyphicon-fire"
+                        style="margin-right: 10px"
+                      ></i
+                      >Buy it again
+                    </button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="buttons">Track package</button>
+                    <button class="buttons1" style="margin-top: 12px">
+                      Write a product review
+                    </button>
+                    <button class="buttons1" style="margin-top: 3px">
+                      Archieve order
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

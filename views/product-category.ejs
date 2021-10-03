@@ -1,0 +1,763 @@
+<!-- get_header('Page Name','Title')-->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>globalnostalgia - Product Category</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="favicon.html">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.html">
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/css/jquery-ui.css">
+
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/css/animate.css">
+		<link rel="stylesheet" href="/assets/css/iconfont.css">
+		<link rel="stylesheet" href="/assets/css/isotope.css">
+		<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="/assets/css/vertical-menu.css">
+		<link rel="stylesheet" href="/assets/css/navigation.min.css">
+		
+
+		<!--For Plugins external css-->
+		<link rel="stylesheet" href="/assets/css/plugins.css" />
+
+		<!--Theme custom css -->
+		<link rel="stylesheet" href="/assets/css/product-category.css">
+
+		<!--Theme Responsive css-->
+		<link rel="stylesheet" href="/assets/css/responsive.css" />
+	</head>
+	<body>
+        <%- include('partials/other_page_header'); -%>
+        <!-- welcome section -->
+        <!--breadcumb start here-->
+        <div class="xs-breadcumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!--breadcumb end here--><!-- End welcome section -->
+
+        <section class="xs-pt-50 xs-section-padding-bottom">
+            <div class="container">
+                <ul class="nav nav-tabs xs-nav-tab-v3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="mobiles-tab" data-toggle="tab" href="/product/subcategory/Camera" role="tab" aria-controls="computer" aria-selected="true"><span class="icon icon-desktop2"></span> Mobiles <small><% mobiles.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tablets-tab" data-toggle="tab" href="/product/subcategory/Football" role="tab" aria-controls="mobile" aria-selected="false"><span class="icon icon-phone2"></span> Tablets <small><% tablets.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="laptops-tab" data-toggle="tab" href="/product/subcategory/Table_tennis" role="tab" aria-controls="electronics" aria-selected="false"><span class="icon icon-lightbulb"></span> Laptops <small><% laptops.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="speakers-tab" data-toggle="tab" href="/product/subcategory/Cricket" role="tab" aria-controls="electronics" aria-selected="false"><span class="icon icon-lightbulb"></span> Speakers <small><% speakers.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="cameras-tab" data-toggle="tab" href="/product/subcategory/Cricket" role="tab" aria-controls="electronics" aria-selected="false"><span class="icon icon-lightbulb"></span> Cameras <small><% cameras.length %> Items Available</small></a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="computer" role="tabpanel" aria-labelledby="mobiles-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof mobiles !== 'undefined' && mobiles){  
+                            for(var i=0;i<12 && i<mobiles.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= mobiles[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= mobiles[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= mobiles[i]._id%>"
+                                              ><%= mobiles[i].productdetail.productname%></a
+                                            >
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= mobiles[i].productdetail.price%>
+                                            <del>₹<%= mobiles[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                        </div>
+                    </div>  
+                    
+                    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="tablets-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof tablets !== 'undefined' && tablets){  
+                            for(var i=0;i<12 && i<tablets.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= tablets[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= tablets[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= tablets[i]._id%>">
+                                              <%= tablets[i].productdetail.productname%></a>
+                                            
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= tablets[i].productdetail.price%>
+                                            <del>₹<%= tablets[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="laptops">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof laptops !== 'undefined' && laptops){  
+                            for(var i=0;i<12 && i<laptops.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= laptops[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= laptops[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= laptops[i]._id%>"><%= laptops[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= laptops[i].productdetail.price%>
+                                            <del>₹<%= laptops[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="speakers-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof speakers !== 'undefined' && speakers){  
+                            for(var i=0;i<12 && i<speakers.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= speakers[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= speakers[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= speakers[i]._id%>"><%= speakers[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= speakers[i].productdetail.price%>
+                                            <del>₹<%= speakers[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>                    
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="cameras-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof cameras !== 'undefined' && cameras){  
+                            for(var i=0;i<12 && i<cameras.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= cameras[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= cameras[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= cameras[i]._id%>"><%= cameras[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= cameras[i].productdetail.price%>
+                                            <del>₹<%= cameras[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>                    
+                
+            </div>
+        </div>
+        </section>
+
+
+
+        <section class="xs-pt-50 xs-section-padding-bottom">
+            <div class="container">
+                <ul class="nav nav-tabs xs-nav-tab-v3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="cable-tab" data-toggle="tab" href="/product/subcategory/Cable" role="tab" aria-controls="computer" aria-selected="true"><span class="icon icon-desktop2"></span> Cables <small><% cables.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="adaptor-tab" data-toggle="tab" href="/product/subcategory/Adapter" role="tab" aria-controls="mobile" aria-selected="false"><span class="icon icon-phone2"></span> Adaptors <small><% adaptors.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="power-bank-tab" data-toggle="tab" href="/product/subcategory/Power_bank" role="tab" aria-controls="electronics" aria-selected="false"><span class="icon icon-lightbulb"></span> Power Banks <small><% power_banks.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pen-drives-tab" data-toggle="tab" href="/product/subcategory/pen_drives" role="tab" aria-controls="iphone" aria-selected="false"><span class="icon icon-laptop-phone"></span> Pen Drives <small><% pen_drives.length %> Items Available</small></a>
+                    </li>
+                    
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="computer" role="tabpanel" aria-labelledby="cable-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof cables !== 'undefined' && cables){  
+                            for(var i=0;i<12 && i<cables.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= cables[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= cables[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= cables[i]._id%>"
+                                              ><%= cables[i].productdetail.productname%></a
+                                            >
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= cables[i].productdetail.price%>
+                                            <del>₹<%= cables[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                        </div>
+                    </div>  
+                    
+                    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="adaptor-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof adaptors !== 'undefined' && adaptors){  
+                            for(var i=0;i<12 && i<adaptors.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= adaptors[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= adaptors[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= adaptors[i]._id%>">
+                                              <%= adaptors[i].productdetail.productname%></a>
+                                            
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= adaptors[i].productdetail.price%>
+                                            <del>₹<%= adaptors[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="power-bank-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof power_banks !== 'undefined' && power_banks){  
+                            for(var i=0;i<12 && i<power_banks.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= power_banks[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= power_banks[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= power_banks[i]._id%>"><%= power_banks[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= power_banks[i].productdetail.price%>
+                                            <del>₹<%= power_banks[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="accessories" role="tabpanel" aria-labelledby="pen-drives-tab-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof pen_drives !== 'undefined' && pen_drives){  
+                            for(var i=0;i<12 && i<pen_drives.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= pen_drives[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= pen_drives[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= pen_drives[i]._id%>"
+                                              ><%= pen_drives[i].productdetail.productname%></a>
+                                            
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= pen_drives[i].productdetail.price%>
+                                            <del>₹<%= pen_drives[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                        </div>
+                    </div>
+                    
+                
+            </div>
+        </div>
+        </section>
+
+
+        <section class="xs-pt-50 xs-section-padding-bottom">
+            <div class="container">
+                <ul class="nav nav-tabs xs-nav-tab-v3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="men-tab" data-toggle="tab" href="/product/subcategory/Men" role="tab" aria-controls="computer" aria-selected="true"><span class="icon icon-desktop2"></span> Men <small><% men.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="women-tab" data-toggle="tab" href="/product/subcategory/Women" role="tab" aria-controls="mobile" aria-selected="false"><span class="icon icon-phone2"></span> Women <small><% women.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="kids-tab" data-toggle="tab" href="/product/subcategory/Kids" role="tab" aria-controls="electronics" aria-selected="false"><span class="icon icon-lightbulb"></span> Kids <small><% kids.length %> Items Available</small></a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="computer" role="tabpanel" aria-labelledby="men-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof men !== 'undefined' && men){  
+                            for(var i=0;i<12 && i<men.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= men[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= men[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= men[i]._id%>"
+                                              ><%= men[i].productdetail.productname%></a
+                                            >
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= men[i].productdetail.price%>
+                                            <del>₹<%= men[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                        </div>
+                    </div>  
+                    
+                    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="women-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof women !== 'undefined' && women){  
+                            for(var i=0;i<12 && i<women.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= women[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= women[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= women[i]._id%>">
+                                              <%= women[i].productdetail.productname%></a>
+                                            
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= women[i].productdetail.price%>
+                                            <del>₹<%= women[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="kids-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof kids !== 'undefined' && kids){  
+                            for(var i=0;i<12 && i<kids.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= kids[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= kids[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= kids[i]._id%>"><%= kids[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= kids[i].productdetail.price%>
+                                            <del>₹<%= kids[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>
+                                        
+                
+            </div>
+        </div>
+        </section>
+
+
+        <section class="xs-pt-50 xs-section-padding-bottom">
+            <div class="container">
+                <ul class="nav nav-tabs xs-nav-tab-v3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="basketball-tab" data-toggle="tab" href="/product/subcategory/Basketball" role="tab" aria-controls="computer" aria-selected="true"><span class="icon icon-desktop2"></span> BasketBall <small><% basketball.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="football-tab" data-toggle="tab" href="/product/subcategory/Football" role="tab" aria-controls="mobile" aria-selected="false"><span class="icon icon-phone2"></span> FootBall <small><% football.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="table-tennis-tab" data-toggle="tab" href="/product/subcategory/Table_tennis" role="tab" aria-controls="electronics" aria-selected="false"><span class="icon icon-lightbulb"></span> Table Tennis <small><% ttennis.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Cricket-tab" data-toggle="tab" href="/product/subcategory/Cricket" role="tab" aria-controls="electronics" aria-selected="false"><span class="icon icon-lightbulb"></span> Cricket <small><% cricket.length %> Items Available</small></a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="computer" role="tabpanel" aria-labelledby="basketball-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof basketball !== 'undefined' && basketball){  
+                            for(var i=0;i<12 && i<basketball.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= basketball[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= basketball[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= basketball[i]._id%>"
+                                              ><%= basketball[i].productdetail.productname%></a
+                                            >
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= basketball[i].productdetail.price%>
+                                            <del>₹<%= basketball[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                        </div>
+                    </div>  
+                    
+                    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="football-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof football !== 'undefined' && football){  
+                            for(var i=0;i<12 && i<football.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= football[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= football[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= football[i]._id%>">
+                                              <%= football[i].productdetail.productname%></a>
+                                            
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= football[i].productdetail.price%>
+                                            <del>₹<%= football[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="table-tennis-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof ttennis !== 'undefined' && ttennis){  
+                            for(var i=0;i<12 && i<ttennis.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= ttennis[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= ttennis[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= ttennis[i]._id%>"><%= ttennis[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= ttennis[i].productdetail.price%>
+                                            <del>₹<%= ttennis[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="Cricket-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof cricket !== 'undefined' && cricket){  
+                            for(var i=0;i<12 && i<cricket.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= cricket[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= cricket[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="/product/id/<%= cricket[i]._id%>"><%= cricket[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= cricket[i].productdetail.price%>
+                                            <del>₹<%= cricket[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>                    
+                
+            </div>
+        </div>
+        </section>
+
+        <section class="xs-pt-50 xs-section-padding-bottom">
+            <div class="container">
+                <ul class="nav nav-tabs xs-nav-tab-v3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="kitchen-tab" data-toggle="tab" href="/product/subcategory/Kitchen" role="tab" aria-controls="computer" aria-selected="true"><span class="icon icon-desktop2"></span> Kitchen <small><% kitchen.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="furniture-tab" data-toggle="tab" href="/product/subcategory/Furniture" role="tab" aria-controls="mobile" aria-selected="false"><span class="icon icon-phone2"></span> Furniture <small><% furniture.length %> Items Available</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="hall-tab" data-toggle="tab" href="/product/subcategory/Hall" role="tab" aria-controls="electronics" aria-selected="false"><span class="icon icon-lightbulb"></span> Hall <small><% hall.length %> Items Available</small></a>
+                    </li>
+                </ul>
+                    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="kitchen-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof kitchen !== 'undefined' && kitchen){  
+                            for(var i=0;i<12 && i<kitchen.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= kitchen[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= kitchen[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= kitchen[i]._id%>">
+                                              <%= kitchen[i].productdetail.productname%></a>
+                                            
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= kitchen[i].productdetail.price%>
+                                            <del>₹<%= kitchen[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="furniture-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof furniture !== 'undefined' && furniture){  
+                            for(var i=0;i<12 && i<furniture.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= furniture[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= furniture[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= furniture[i]._id%>"><%= furniture[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= furniture[i].productdetail.price%>
+                                            <del>₹<%= furniture[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="iphone" role="tabpanel" aria-labelledby="hall-tab">
+                        <div class="row no-gutters product-category-version-2">
+                            <% if(typeof hall !== 'undefined' && hall){  
+                            for(var i=0;i<12 && i<hall.length;i++){ %>
+                            <div class="col-md-4 col-lg-2">
+                                      
+                                        <div class="xs-product-category">
+                                          <img
+                                            src="<%= hall[i].productdetail.avatar[0]%>"
+                                            data-echo="<%= hall[i].productdetail.avatar[0]%>"
+                                            style="width: 71px;height: 70px;"
+                                            alt="Mobile"
+                                          />
+                                          <h4 class="product-title">
+                                            <a href="product/id/<%= hall[i]._id%>"><%= hall[i].productdetail.productname%></a>
+                                          </h4>
+                                          <span class="price color-primary">
+                                            ₹<%= hall[i].productdetail.price%>
+                                            <del>₹<%= hall[i].productdetail.prize%></del>
+                                          </span>
+                                        </div>
+                                        
+                                        
+                            </div>
+                            <%}
+                        }%>
+                         </div>
+                    </div>                    
+                
+            </div>
+        </div>
+        </section>
+
+    //rest code moved to product-category-remaining.txt    
+
+ 
+    <%- include('partials/footer'); -%>
+    
+		<!-- js file start -->
+		<script src="/assets/js/jquery-3.2.1.min.js"></script>
+		<script src="/assets/js/jquery-ui.js"></script>
+		<script src="/assets/js/modernizr.js"></script>
+		<script src="/assets/js/plugins.js"></script>
+		<script src="/assets/js/Popper.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/isotope.pkgd.min.js"></script>
+		<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="/assets/js/owl.carousel.min.js"></script>
+		<script src="/assets/js/jquery.menu-aim.js"></script>
+		<script src="/assets/js/vertical-menu.js"></script>
+		<script src="/assets/js/tweetie.js"></script>
+		<script src="/assets/js/echo.min.js"></script>
+		<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+		<script src="/assets/js/jquery.countdown.min.js"></script>
+		<script src="/assets/js/jquery.waypoints.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+		<script src="/assets/js/spectragram.min.js"></script>
+		<script src="/assets/js/main.js"></script>		<!-- End js file -->
+	</body>
+
+
+</html>

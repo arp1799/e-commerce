@@ -1,0 +1,1263 @@
+<style>
+  .searchItem{
+    background: #fafafa;
+    padding: 5px 0px 5px 5px;
+    width: 100%;
+    border-bottom: 2px solid rgb(226, 226, 226);
+    border-left: 2px solid rgb(226, 226, 226);
+    border-right: 2px solid rgb(226, 226, 226);
+    font-size: large;
+    box-shadow: #c53232;
+    cursor: pointer;
+    font: 20px;
+    top:100%
+    
+  }
+  .searchItem a:link{
+    color: black;
+  }
+ 
+  .searchItem:hover a:link{
+    background:  #7a52b3; ;
+    color: white;
+  }
+ 
+  .searchItem:hover {
+    background:  #7a52b3; ;
+    color: white;
+  }
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+<div>
+    <!-- promo popup wraper -->
+    <div class="zoom-anim-dialog mfp-hide xs-promoPopup">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 xs-padding-0">
+            <div class="promo-image-container">
+              <img src="/assets/images/promo-images.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 align-self-center">
+            <div class="promo-text-container">
+              <div class="promo-text-content">
+                <h3>SUBSCRIBE NEWSLETTER</h3>
+                <h4>Connect to globalnostalgia</h4>
+                <p>Get exclusive discounts and coupons</p>
+              </div>
+              <form
+                action="#"
+                method="POST"
+                class="xs-newsletter newsLetter-v2"
+              >
+                <label for="xs-promo-email"></label>
+                <input
+                  type="email"
+                  name="EMAIL"
+                  id="xs-promo-email"
+                  placeholder="Enter your email...."
+                />
+                <button class="btn btn-primary">
+                  <i class="fa fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END promo popup wraper -->
+ 
+    <!-- sidebar cart item -->
+    <div class="xs-sidebar-group">
+      <div class="xs-overlay bg-black"></div>
+      <div class="xs-minicart-widget">
+        <div class="widget-heading media">
+          <h3 class="widget-title align-self-center d-flex">Shopping cart</h3>
+          <div class="media-body">
+            <a href="#" class="close-side-widget"> X </a>
+          </div>
+        </div>
+        <div class="widget woocommerce widget_shopping_cart">
+          <div class="widget_shopping_cart_content">
+            <ul class="xs-miniCart-menu woocommerce">
+              <li
+                class="woocommerce-mini-cart-item mini_cart_item media mini_cart_item"
+              >
+                <a href="#" class="d-flex mini-product-thumb xs-cart-img">
+                  <img
+                    src="/assets/images/160x170/product_11_160x170.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="media-body">
+                  <h4 class="mini-cart-title">Woo Album #3</h4>
+                  <span class="quantity"
+                    >1 ×
+                    <span class="woocommerce-Price-amount amount">
+                      <span class="woocommerce-Price-currencySymbol">₹</span
+                      >9.00
+                    </span>
+                  </span>
+                  <a
+                    href="#"
+                    class="btn-cancel pull-right remove remove_from_cart_button"
+                    >X</a
+                  >
+                </div>
+              </li>
+              <li class="mini-cart-btn">
+                <p class="woocommerce-mini-cart__total total">
+                  <strong>Subtotal:</strong>
+                  <span class="woocommerce-Price-amount amount">
+                    <span class="woocommerce-Price-currencySymbol">₹</span>9.00
+                  </span>
+                </p>
+              </li>
+              <li>
+                <p class="woocommerce-mini-cart__buttons buttons xs-btn-wraper">
+                  <a
+                    href="/user/cart"
+                    class="btn btn-primary badge badge-pill wc-forward"
+                    >View cart</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-primary badge badge-pill checkout wc-forward"
+                    >Checkout</a
+                  >
+                </p>
+              </li>
+            </ul>
+            <div class="xs-empty-content">
+              <p class="woocommerce-mini-cart__empty-message empty">
+                No products in the cart.
+              </p>
+              <p class="empty-cart-icon">
+                <i class="icon icon-shopping-cart"></i>
+              </p>
+              <p class="xs-btn-wraper justify-content-center">
+                <a class="btn btn-primary" href="shop.html">Return To Shop</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END sidebar cart item -->
+    <!-- topBar section -->
+    <div class="xs-top-bar d-none d-md-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-7">
+                <ul class="xs-top-bar-info">
+                  <li>
+                    <a href="#"><i class="icon icon-van"></i>Free Delivery</a>
+                  </li>
+                  <li><a href="#">Return Policy</a></li>
+                </ul>
+                <!-- .xs-top-bar-info END -->
+              </div>
+              <div class="col-lg-5">
+                <ul class="xs-social-list">
+                  <li class="xs-list-text">Follow Us</li>
+                  <li>
+                    <a href="#"><i class="icon icon-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon icon-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon icon-pinterest"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+                <!-- .xs-social-list END -->
+              </div>
+            </div>
+          </div>
+          <!-- Looged in -->
+          <% if(typeof user !== 'undefined' && user){%>
+            <div class="col-lg-6">
+              <ul class="xs-top-bar-info right-content">
+                <li>
+                  <a href="/other/marketplace"><i class="fa fa-store"></i></a>
+                </li>
+                <li>
+                  <div class="btn-group p-0">
+                    <button
+                      class="btn btn-primary btn-sm dropdown-toggle"
+                      type="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <%=user.firstname%>                         
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuLink"
+                      style="z-index: 10000"
+                    >
+                      <a class="dropdown-item my-3" href="#">My Profile</a>
+                      <a class="dropdown-item my-3" href="/user/order-history">My Order</a>
+                      <a class="dropdown-item my-3" href="/user/myproduct">My Products</a>
+                      <a class="dropdown-item my-3" href="/user/addproducts">Add Product</a>
+                      <a class="dropdown-item my-3" href="/user/logout">Sign Out</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  
+                </li>
+              </ul>
+            </div>
+            <%}else{%>
+              <!--================== without login ===========================-->
+              <div class="col-lg-6">
+               <ul class="xs-top-bar-info right-content">
+                <li>
+                  <a href="/other/marketplace"><i class="fa fa-store"></i></a>
+                </li>
+                 
+                 <li>
+                   <div class="btn-group p-0">
+                    <a class="btn btn-primary btn-sm" href="user/signin" role="button">Login</a>
+                 </li>
+               </ul>
+             </div>
+             <%}%>
+  
+          
+            
+         
+ 
+        </div>
+        <!-- .row END -->
+      </div>
+      <!-- .container END -->
+    </div>
+ 
+    <!-- xs modal -->
+    <div
+      class="modal xs-modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span class="icon icon-cross"></span>
+          </button>
+          <ul class="nav nav-tabs xs-tab-nav" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#login"
+                role="tab"
+                data-toggle="tab"
+              >
+                Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#signup" role="tab" data-toggle="tab">
+                Signup
+              </a>
+            </li>
+          </ul>
+          <!-- xs-tab-nav -->
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div
+              role="tabpanel"
+              class="tab-pane fadeInRights show fade in active"
+              id="login"
+            >
+              <form action="#" method="POST" class="xs-customer-form">
+                <div class="input-group input-group-append">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Your Username"
+                  />
+                  <i class="icon icon-profile-male input-group-text"></i>
+                </div>
+                <div class="input-group input-group-append">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter Your Password"
+                  />
+                  <i class="icon icon-key2 input-group-text"></i>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Login
+                </button>
+                <p>or</p>
+                <a href="#" class="btn btn-info btn-block"
+                  >Login with your facebook</a
+                >
+                <a href="#" class="btn btn-danger btn-block"
+                  >Login with your google+</a
+                >
+              </form>
+              <!-- .xs-customer-form END -->
+            </div>
+            <!-- tab-pane #login -->
+            <div role="tabpanel" class="tab-pane fadeInRights fade" id="signup">
+              <form action="#" method="POST" class="xs-customer-form">
+                <div class="input-group input-group-append">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your username"
+                  />
+                  <i class="icon icon-profile-male input-group-text"></i>
+                </div>
+                <div class="input-group input-group-append">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                  <i class="icon icon-envelope2 input-group-text"></i>
+                </div>
+                <div class="input-group input-group-append">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter your password"
+                  />
+                  <i class="icon icon-key2 input-group-text"></i>
+                </div>
+                <div class="input-group input-group-append">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter your confirm password"
+                  />
+                  <i class="icon icon-key2 input-group-text"></i>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Login
+                </button>
+                <p>or</p>
+                <a href="#" class="btn btn-info btn-block"
+                  >Login with your facebook</a
+                >
+                <a href="#" class="btn btn-danger btn-block"
+                  >Login with your google+</a
+                >
+              </form>
+              <!-- .xs-customer-form END -->
+            </div>
+            <!-- tab-pane #signup -->
+          </div>
+          <!-- tab-content -->
+        </div>
+      </div>
+    </div>
+    <!-- End xs modal --><!-- End topBar section -->
+ 
+    <!-- header section -->
+    <header class="xs-header version-fullwidth">
+      <!-- nav bar section -->
+      <div class="xs-navBar">
+        <div class="container container-fullwidth">
+          <div class="row">
+            <div class="col-lg-5 col-sm-3 xs-order-3 xs-menus-group">
+              <nav class="xs-menus">
+                <div class="nav-header">
+                  <div class="nav-toggle"></div>
+                </div>
+                <!-- .nav-header END -->
+                <div class="nav-menus-wrapper">
+                  <ul class="nav-menu">
+                    <a href="/">
+                      <img
+                        src="/assets/images/logo.png"
+                        style="height: 50%; width: 35%"
+                        alt="Home Page"
+                      />
+                    </a>
+                    <!-- <li>
+                      <a href="#" class="highlight"
+                        ><span class="menu-label">NEW</span>Pages</a
+                      >
+                      <ul class="nav-dropdown"> -->
+                        <!-- <li>
+                          <a href="#">Blog</a>
+                          <ul class="nav-dropdown">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-single.html">Blog Single</a></li>
+                          </ul>
+                        </li> -->
+                        <!-- <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li>
+                          <a href="terms-and-condition.html"
+                            >Terms and conditions</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">Product</a>
+                          <ul class="nav-dropdown">
+                            <li>
+                              <a href="product-category.html"
+                                >Product Category</a
+                              >
+                            </li>
+                            <li>
+                              <a href="product-category-v2.html"
+                                >Product Category 2</a
+                              >
+                            </li>
+                            <li>
+                              <a href="product-details.html">Product Details</a>
+                            </li>
+                            <li><a href="verndor-page.html">Vendor Page</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="login-reg.html">Login And reg</a></li>
+                        <li><a href="menus.html">Menus</a></li>
+                        <li><a href="footer.html">Footer</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Shop</a>
+                      <ul class="nav-dropdown">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="compare.html">Compare</a></li>
+                        <li><a href="track-order.html">Track Order</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="account-edit.html">Account Edit</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><span class="menu-label highlight">HOT</span>Categories</a
+                      >
+                      <div class="megamenu-panel">
+                        <div class="megamenu-tabs">
+                          <ul class="megamenu-tabs-nav">
+                            <li class="active">
+                              <a href="#">Women’s Clothing</a>
+                            </li>
+                            <li><a href="#">Men’s Clothing</a></li>
+                            <li><a href="#">Phones & Accessories</a></li>
+                          </ul>
+                          <div class="megamenu-tabs-pane active">
+                            <div class="megamenu-lists">
+                              <ul class="megamenu-list list-col-3">
+                                <li class="megamenu-list-title">
+                                  <a href="#">HOT CATEGORIES</a>
+                                </li>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Blouses & Shirts</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                                <li><a href="#">Rompers</a></li>
+                                <li class="megamenu-list-title">
+                                  <a href="#">BOTTOMS</a>
+                                </li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Leggings</a></li>
+                                <li><a href="#">Jeans</a></li>
+                              </ul>
+                              <ul class="megamenu-list list-col-3">
+                                <li class="megamenu-list-title">
+                                  <a href="#">INTIMATES</a>
+                                </li>
+                                <li><a href="#">Bras</a></li>
+                                <li><a href="#">Brief Sets</a></li>
+                                <li><a href="#">Bostiers & Corsets</a></li>
+                                <li><a href="#">Panties</a></li>
+                                <li class="megamenu-list-title">
+                                  <a href="#">OUTWEAR & JACKETS</a>
+                                </li>
+                                <li><a href="#">Blazers</a></li>
+                                <li><a href="#">Basics Jackets</a></li>
+                                <li><a href="#">Trench</a></li>
+                                <li><a href="#">Leather & Suede</a></li>
+                              </ul>
+                              <ul
+                                class="megamenu-list list-col-3 xs-cate-brand clearfix"
+                              >
+                                <li class="megamenu-list-title">
+                                  <a href="#">Brands</a>
+                                </li>
+                                <li>
+                                  <a href="#"
+                                    ><img
+                                      src="/assets/images/sponsors/partner-1.png"
+                                      alt=""
+                                  /></a>
+                                </li>
+                                <li>
+                                  <a href="#"
+                                    ><img
+                                      src="/assets/images/sponsors/partner-2.png"
+                                      alt=""
+                                  /></a>
+                                </li>
+                                <li>
+                                  <a href="#"
+                                    ><img
+                                      src="/assets/images/sponsors/partner-3.png"
+                                      alt=""
+                                  /></a>
+                                </li>
+                                <li>
+                                  <a href="#"
+                                    ><img
+                                      src="/assets/images/sponsors/partner-4.png"
+                                      alt=""
+                                  /></a>
+                                </li>
+                                <li>
+                                  <a href="#"
+                                    ><img
+                                      src="/assets/images/sponsors/partner-5.png"
+                                      alt=""
+                                  /></a>
+                                </li>
+                                <li>
+                                  <a href="#"
+                                    ><img
+                                      src="/assets/images/sponsors/partner-6.png"
+                                      alt=""
+                                  /></a>
+                                </li>
+                                <li>
+                                  <a href="#"
+                                    ><img
+                                      src="/assets/images/sponsors/partner-7.png"
+                                      alt=""
+                                  /></a>
+                                </li>
+                                <li>
+                                  <a href="#"
+                                    ><img
+                                      src="/assets/images/sponsors/partner-8.png"
+                                      alt=""
+                                  /></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="megamenu-tabs-pane">
+                            <div class="megamenu-lists">
+                              <ul class="megamenu-list list-col-3">
+                                <li class="megamenu-list-title">
+                                  <a href="#">HOT SALE</a>
+                                </li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Tank Tops</a></li>
+                                <li><a href="#">Polo</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li class="megamenu-list-title">
+                                  <a href="#">BOTTOMS</a>
+                                </li>
+                                <li><a href="#">Casual Pants</a></li>
+                                <li><a href="#">Cargo Pants</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Shorts</a></li>
+                              </ul>
+                              <ul class="megamenu-list list-col-3">
+                                <li class="megamenu-list-title">
+                                  <a href="#">OUTERWEAR</a>
+                                </li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">Trench</a></li>
+                                <li><a href="#">Parkas</a></li>
+                                <li><a href="#">Sweaters</a></li>
+                                <li class="megamenu-list-title">
+                                  <a href="#">UNDERWEAR</a>
+                                </li>
+                                <li><a href="#">Boxers</a></li>
+                                <li><a href="#">Briefs</a></li>
+                                <li><a href="#">Robes</a></li>
+                                <li><a href="#">Socks</a></li>
+                              </ul>
+                              <ul class="megamenu-list list-col-3">
+                                <li class="megamenu-list-title">
+                                  <a href="#">ACESSORIES</a>
+                                </li>
+                                <li><a href="#">Eyewear Frames</a></li>
+                                <li><a href="#">Baseball Caps</a></li>
+                                <li><a href="#">Scarves</a></li>
+                                <li><a href="#">Belts</a></li>
+                                <li class="megamenu-list-title">
+                                  <a href="#">SUNGLASSES</a>
+                                </li>
+                                <li><a href="#">Pilot</a></li>
+                                <li><a href="#">Wayfarer</a></li>
+                                <li><a href="#">Square</a></li>
+                                <li><a href="#">Round</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="megamenu-tabs-pane">
+                            <div class="row phones">
+                              <div class="col-md-3">
+                                <div class="xs-single-phone-cate">
+                                  <a href="#">
+                                    <img
+                                      src="/assets/images/160x170/product_1_160x170.jpg"
+                                      alt="image"
+                                    />
+                                  </a>
+                                  <h4>Apple</h4>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="xs-single-phone-cate">
+                                  <a href="#">
+                                    <img
+                                      src="/assets/images/160x170/product_2_160x170.jpg"
+                                      alt="image"
+                                    />
+                                  </a>
+                                  <h4>Asus</h4>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="xs-single-phone-cate">
+                                  <a href="#">
+                                    <img
+                                      src="/assets/images/160x170/product_3_160x170.jpg"
+                                      alt="image"
+                                    />
+                                  </a>
+                                  <h4>Samsung</h4>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="xs-single-phone-cate">
+                                  <a href="#">
+                                    <img
+                                      src="/assets/images/160x170/product_4_160x170.jpg"
+                                      alt="image"
+                                    />
+                                  </a>
+                                  <h4>MI</h4>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="xs-single-phone-cate">
+                                  <a href="#">
+                                    <img
+                                      src="/assets/images/160x170/product_5_160x170.jpg"
+                                      alt="image"
+                                    />
+                                  </a>
+                                  <h4>Huawei</h4>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="xs-single-phone-cate">
+                                  <a href="#">
+                                    <img
+                                      src="/assets/images/160x170/product_6_160x170.jpg"
+                                      alt="image"
+                                    />
+                                  </a>
+                                  <h4>Motorola</h4>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="xs-single-phone-cate">
+                                  <a href="#">
+                                    <img
+                                      src="/assets/images/160x170/product_1_160x170.jpg"
+                                      alt="image"
+                                    />
+                                  </a>
+                                  <h4>Nokia</h4>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="xs-single-phone-cate">
+                                  <a href="#">
+                                    <img
+                                      src="/assets/images/160x170/product_2_160x170.jpg"
+                                      alt="image"
+                                    />
+                                  </a>
+                                  <h4>Sony</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div> -->
+                <!-- .nav-menus-wrapper END -->
+              </nav>
+              <!-- .xs-menus END -->
+            </div>
+            <div class="col-lg-5 col-sm-5 xs-order-2 xs-wishlist-group">
+              <div class="xs-wish-list-item">
+                <ul class="xs-header-info">
+                  <li class="d-none d-md-none d-lg-block">
+                    <i class="icon icon-van"></i> Track Your Order
+                  </li>
+                </ul>
+                <span class="xs-wish-list">
+                  <a href="/user/wishlist" class="xs-single-wishList">
+                    <span class="xs-item-count">0</span>
+                    <i class="icon icon-heart"></i>
+                  </a>
+                </span>
+                <span class="xs-wish-list">
+                  <a href="compare.html" class="xs-single-wishList">
+                    <span class="xs-item-count">0</span>
+                    <i class="icon icon-arrows"></i>
+                  </a>
+                </span>
+                <div class="dropdown dropright xs-miniCart-dropdown">
+                  <a href="#" class="xs-single-wishList offset-cart-menu">
+                    <span class="xs-item-count highlight">3</span>
+                    <i class="icon icon-bag"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .row END -->
+        </div>
+        <!-- .container END -->
+      </div>
+      <!-- End nav bar section -->
+ 
+      <!-- nav down section -->
+      <div class="xs-navDown">
+        <div class="container container-fullwidth">
+          <div class="row">
+            <div class="col-lg-3 col-xl-3 d-none d-md-none d-lg-block">
+              <!-- vertical menu bar -->
+              <div
+                class="cd-dropdown-wrapper xs-vartical-menu v-menu-is-active v-gray"
+              >
+                <a class="cd-dropdown-trigger dropdown-is-active" href="#0">
+                  <i class="fa fa-list-ul"></i> All Categories
+                </a>
+                <nav class="cd-dropdown dropdown-is-active">
+                  <h2>Global Nostalgia</h2>
+                  <a href="#0" class="cd-close">Close</a>
+                  <ul class="cd-dropdown-content">
+                    <li class="has-children">
+                      <a href="/product/category/Accessories"
+                        ><i class="icon icon-monitor"></i> Accessories
+                        <i class="fa fa-angle-right submenu-icon"></i
+                      ></a>
+                      <ul class="cd-dropdown-gallery is-hidden">
+                        <li class="go-back"><a href="#0">Menu</a></li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Cable">
+                            <img
+                              src="/assets/images/274x167/product_3_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Cable</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Power_bank">
+                            <img
+                              src="/assets/images/274x167/product_2_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Power Bank</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/pen_drives">
+                            <img
+                              src="/assets/images/274x167/product_1_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Pen Drives</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Adapter">
+                            <img
+                              src="/assets/images/274x167/product_4_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Adaptors</h3>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                      <!-- .cd-dropdown-gallery -->
+                    </li>
+ 
+ 
+                    <li class="has-children">
+                      <a href="/product/category/Electronics"
+                        ><i class="icon icon-light-bulb"></i> Electronics
+                        <i class="fa fa-angle-right submenu-icon"></i
+                      ></a>
+                      <ul class="cd-dropdown-gallery is-hidden">
+                        <li class="go-back"><a href="#0">Menu</a></li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Laptops">
+                            <img
+                              src="/assets/images/274x167/product_3_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Laptops</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Tablet">
+                            <img
+                              src="/assets/images/274x167/product_2_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Tablets</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Camera">
+                            <img
+                              src="/assets/images/274x167/product_1_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Cameras</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/speakers">
+                            <img
+                              src="/assets/images/274x167/product_4_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Speakers</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Mobiles">
+                            <img
+                              src="/assets/images/274x167/product_4_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Mobiles</h3>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                      <!-- .cd-dropdown-gallery -->
+                    </li>
+                    <!-- .has-children -->
+                    <li class="has-children">
+                      <a href="/product/category/Cloths"
+                        ><i class="icon icon-tshirt"></i> Clothings
+                        <i class="fa fa-angle-right submenu-icon"></i
+                      >
+                      <ul class="cd-dropdown-gallery is-hidden">
+                        <li class="go-back"><a href="#0">Menu</a></li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Men">
+                            <img
+                              src="/assets/images/274x167/product_3_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Men</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Women">
+                            <img
+                              src="/assets/images/274x167/product_2_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Women</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Kids">
+                            <img
+                              src="/assets/images/274x167/product_1_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Kids</h3>
+                          </a>
+                        </li>
+                        <li>><a href="#">More</a></li>
+                      </ul>
+                      <!-- .cd-dropdown-gallery -->
+                    </li>
+                    <!-- .has-children -->
+                    <li class="has-children">
+                      <a href="/product/category/Sports"
+                        ><i class="icon icon-light-bulb"></i> Sports  
+                        <i class="fa fa-angle-right submenu-icon"></i
+                      ></a>
+                      <ul class="cd-dropdown-gallery is-hidden">
+                        <li class="go-back"><a href="#0">Menu</a></li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/BasketBall">
+                            <img
+                              src="/assets/images/274x167/product_3_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>BasketBall</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Football">
+                            <img
+                              src="/assets/images/274x167/product_2_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>FootBall</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Table_tennis">
+                            <img
+                              src="/assets/images/274x167/product_1_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Table Tennis</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Cricket">
+                            <img
+                              src="/assets/images/274x167/product_4_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Cricket</h3>
+                          </a>
+                        </li>
+                        <li><a href="#">More</a></li>
+                      </ul>
+                      <!-- .cd-dropdown-gallery -->
+                    </li>
+                    <li class="has-children">
+                      <a href="/product/category/Household"
+                        ><i class="icon icon-light-bulb"></i> Household
+                        <i class="fa fa-angle-right submenu-icon"></i
+                      ></a>
+                      <ul class="cd-dropdown-gallery is-hidden">
+                        <li class="go-back"><a href="#0">Menu</a></li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Kitchen">
+                            <img
+                              src="/assets/images/274x167/product_3_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Kitchen</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Hall">
+                            <img
+                              src="/assets/images/274x167/product_2_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Hall</h3>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="cd-dropdown-item" href="/product/subcategory/Furniture">
+                            <img
+                              src="/assets/images/274x167/product_1_274x167.jpg"
+                              alt="Product Image"
+                            />
+                            <h3>Furniture</h3>
+                          </a>
+                        </li>
+                        
+                        <a href="#">More</a>
+                      </ul>
+                      <!-- .cd-dropdown-gallery -->
+                   
+                  </ul>
+                  <!-- .cd-dropdown-content -->
+                </nav>
+                <!-- .cd-dropdown -->
+              </div>
+              <!-- .cd-dropdown-wrapper -->
+              <!-- End vertical menu bar -->
+            </div>
+            <div class="col-lg-6 col-xl-7">
+              <form class="xs-navbar-search" method="get" action="/product/search" autocomplete="off">
+                <div class="input-group">
+                  <input
+                    type="search"
+                    style="position: relative;"
+                    class="form-control"
+                    id="searchBar"
+                    name="tag"
+                    value=""
+                    placeholder="Find your product"
+                  />
+                  <div class="xs-category-select-wraper">
+                    <select class="xs-category-select">
+                      <option value="0">All Categories</option>
+                      <option value="Cable">
+                        Cables
+                      </option>
+                      <option value="Power_bank">
+                        Power Bank
+                      </option>
+                      <option value="pen_drives">
+                        Pen Drives
+                      </option>
+                      <option value="Adapter">
+                        Adaptor
+                      </option>
+                      <option value="Mobiles">
+                        Mobiles
+                      </option>
+                      <option value="Tablet">
+                        Tablets
+                      </option>
+                      <option value="Camera">Cameras</option>
+                      <option value="speakers">Speakers</option>
+                      <option value="Men">Clothings &amp; Men</option>
+                      <option value="Women">Clothings &amp; Women</option>
+                      <option value="Kids">Clothings &amp; Kids</option>
+                      <option value="BasketBall">
+                        Sports &amp; BasketBall
+                      </option>
+                      <option value="FootBall">
+                        Sports &amp; FootBall
+                      </option>
+                      <option value="Table_tennis">
+                        Sports &amp; Table Tennis
+                      </option>
+                      <option value="Cricket">
+                        Sports &amp; Cricket
+                      </option>
+                      <option value="Kitchen">Kitchen</option>
+                      <option value="Hall">Hall</option>
+                      <option value="Furniture">Furniture</option>
+                      
+                    </select>
+                  </div>
+                  <div class="input-group-btn">
+                    <input
+                      class="row"
+                      type="hidden"
+                      id="search-param"
+                      name="post_type"
+                      value="product"
+                      
+                    />
+ 
+                    <!-- <div style="z-index: 1000; position:absolute;"  class="row input-group-btn" id="searchList"></div> -->
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fa fa-search d-flex align-self-center"></i>
+                    </button>
+                  
+                  </div>
+                </div>
+              </form>
+              <div id="searchList" style=" position: absolute; width: 70%;z-index: 1000; "></div>
+            </div>
+            <div class="col-lg-3 col-xl-2 d-none d-md-none d-lg-block">
+              <a href="#" class="btn btn-outline-primary btn-lg">
+                <strong>Black Friday</strong>
+                Get 45% Off
+              </a>
+            </div>
+           
+          </div>
+          <!-- .row END -->
+        </div>
+        <!-- .container END -->
+      </div>
+      <!-- End nav down section -->
+ 
+      <!-- <div class="nav-cover"></div> -->
+    </header>
+    <!-- End header section -->
+ 
+    <!-- banner section -->
+    <div class="xs-banner v-color">
+      <div class="xs-banner-slider-5 owl-carousel">
+        <div
+          class="xs-banner-item"
+          style="
+            background-image: url('/assets/images/backgrounds/slider_bg_5.png');
+          "
+        >
+          <div class="container container-fullwidth">
+            <div class="row">
+              <div class="col-lg-9 offset-lg-3 col-md-12">
+                <div class="row">
+                  <div class="col-md-3 xs-banner-image animInLeft">
+                    <div class="d-none d-sm-none d-md-block">
+                      <img src="/assets/images/welcome/speaker_1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 xs-banner-content">
+                    <h2 class="xs-banner-sub-title animInTop">
+                      Entire Big Collection
+                    </h2>
+                    <h3 class="xs-banner-title animInBottom">
+                      SHOP WISE WITH PRICE COMPARISONS
+                    </h3>
+                    <div class="xs-btn-wraper">
+                      <a href="/index" class="btn btn-outline-primary animInLeft"
+                        >VIEW COLLECTION</a
+                      >
+                      <a href="/other/categories" class="btn btn-primary animInRight"
+                        >CATEGORIES</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-3 xs-banner-image animInRight">
+                    <img src="/assets/images/png/watch_slider.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .row END -->
+          </div>
+          <!-- .container END -->
+        </div>
+        <div
+          class="xs-banner-item"
+          style="
+            background-image: url('/assets/images/backgrounds/slider_bg_5.png');
+          "
+        >
+          <div class="container container-fullwidth">
+            <div class="row">
+              <div class="col-lg-9 offset-lg-3 col-md-12">
+                <div class="row">
+                  <div class="col-md-3 xs-banner-image animInLeft">
+                    <div class="d-none d-sm-none d-md-block">
+                      <img src="/assets/images/welcome/speaker_1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 xs-banner-content">
+                    <h2 class="xs-banner-sub-title animInTop">
+                      Entire Big Collection
+                    </h2>
+                    <h3 class="xs-banner-title animInBottom">
+                      SHOP WISE WITH PRICE COMPARISONS
+                    </h3>
+                    <div class="xs-btn-wraper">
+                      <a href="/index" class="btn btn-outline-primary animInLeft"
+                        >VIEW COLLECTION</a
+                      >
+                      <a href="#" class="btn btn-primary animInRight"
+                        >CATEGORIES</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-3 xs-banner-image animInRight">
+                    <img src="/assets/images/png/watch_slider.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .row END -->
+          </div>
+          <!-- .container END -->
+        </div>
+        <div
+          class="xs-banner-item"
+          style="
+            background-image: url('/assets/images/backgrounds/slider_bg_5.png');
+          "
+        >
+          <div class="container container-fullwidth">
+            <div class="row">
+              <div class="col-md-9 offset-md-3 col-md-12">
+                <div class="row">
+                  <div class="col-md-3 xs-banner-image animInLeft">
+                    <div class="d-none d-sm-none d-md-block">
+                      <img src="/assets/images/welcome/speaker_1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 xs-banner-content">
+                    <h2 class="xs-banner-sub-title animInTop">
+                      Entire Big Collection
+                    </h2>
+                    <h3 class="xs-banner-title animInBottom">
+                      SHOP WISE WITH PRICE COMPARISONS
+                    </h3>
+                    <div class="xs-btn-wraper">
+                      <a href="/index" class="btn btn-outline-primary animInLeft"
+                        >VIEW COLLECTION</a
+                      >
+                      <a href="#" class="btn btn-primary animInRight"
+                        >CATEGORIES</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-3 xs-banner-image animInRight">
+                    <img src="/assets/images/png/watch_slider.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .row END -->
+          </div>
+          <!-- .container END -->
+        </div>
+      </div>
+    </div>
+    <!-- End banner section -->
+    
+</div>
+ 
+ 
+<script>
+  var tags=[]
+  tags=fetch('/product/alltags').then((response)=>{
+    response.json().then((data)=>{
+      tags=data
+    })
+  })
+ 
+  const searchBar=document.getElementById('searchBar')
+  const searchList=document.getElementById('searchList')
+  searchBar.addEventListener('keyup',(e)=>{
+    const matchingResult=tags.filter((tag)=>{
+      return tag.toLowerCase().includes(e.target.value.toLowerCase())
+    })
+    var h=''
+    for(var i=0;i<matchingResult.length;i++)
+    {if (i>5)
+      break;
+      h+=`<ul class="searchItem"><a onclick="document.getElementById('searchBar').value("${matchingResult[i]}"); return false;">${matchingResult[i]}</a></ul>`
+    }
+    
+    searchList.innerHTML=h
+    console.log(matchingResult)
+  })
+ 
+ 
+ 
+</script>
+<% if(typeof user !== 'undefined' && user){%>
+<%- include('chat.ejs') %>
+<%}%>

@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- custom css -->
+    <link rel="stylesheet" href="../assets/css/layer_one.css" />
+    <!-- Bootstarp -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/e2723e486c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom script -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <div
+      class="mt-1 container"
+      style="
+        max-height: 3vh;
+        max-width: 70vw;
+        font-size: 1vw;
+        font-family: 'Baloo Tammudu 2', cursive;
+      "
+    >
+      <div class="row">
+        <div class="col-6">
+          Hello!
+          <a href="../registrationform/sign_in.php" class="mx-1">Sign in</a> or
+          <a href="" class="mx-1">register</a>
+        </div>
+
+        <div class="col-6 d-flex flex-row-reverse">
+          <div class="dropdown">
+            <i class="fas fa-shopping-cart mx-2 dropbtn"></i>
+            <div
+              class="dropdown-content navbox p-3"
+              style="font-family: 'Bangers', cursive"
+            >
+              <div>
+                <a class="ml-2" href="../registrationform/sign_in.php">
+                  Sign in</a
+                >
+                to view cart
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <i class="fas fa-bell mx-2 mx-2 dropbtn"></i>
+            <div
+              class="dropdown-content navbox"
+              style="font-family: 'Bangers', cursive"
+            >
+              <div>
+                <a class="ml-2" href="../registrationform/sign_in.php">
+                  Sign in</a
+                >
+                to view notification
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="m-1" style="border-top: 1px solid rgb(112, 112, 112)" />
+    </div>
+  </body>
+</html>
+
+<div class="xs-top-bar d-none d-md-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="xs-top-bar-info">
+              <li>
+                <a class="mr-2" href="#"><i class="icon icon-van"></i>Free Delivery</a>
+              
+              <a href="#"><i class="fas fa-undo"></i>Return Policy</a></li>
+            </ul>
+            <!-- .xs-top-bar-info END -->
+          </div>
+          <div class="col-lg-6">
+            <ul class="xs-social-list">
+              <li class="xs-list-text">Follow Us</li>
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+            <!-- .xs-social-list END -->
+          </div>
+        </div>
+      </div>
+
+       <!--================== without login ===========================-->
+       <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Login
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as vendor</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sign up
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as vendor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!--================== coustomer login ==========================-->
+      <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name                           
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div> -->
+      
+      <!--================== Vendor login ===========================-->
+    <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+                class="btn btn-primary btn-sm "
+                type="button"
+              >
+              <i class="fas fa-plus-circle mr-2"></i> Add Product
+              </button>
+          </li>
+        </ul>
+      </div>  -->
+      
+
+    </div>
+    <!-- .row END -->
+  </div>
+  <!-- .container END -->
+</div>
+
+
+
+
+<div class="xs-top-bar d-none d-md-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="xs-top-bar-info">
+              <li>
+                <a class="mr-2" href="#"><i class="icon icon-van"></i>Free Delivery</a>
+              
+              <a href="#"><i class="fas fa-undo"></i>Return Policy</a></li>
+            </ul>
+            <!-- .xs-top-bar-info END -->
+          </div>
+          <div class="col-lg-6">
+            <ul class="xs-social-list">
+              <li class="xs-list-text">Follow Us</li>
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+            <!-- .xs-social-list END -->
+          </div>
+        </div>
+      </div>
+
+       <!--================== without login ===========================-->
+       <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Login
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as vendor</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sign up
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as vendor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!--================== coustomer login ==========================-->
+      <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name                           
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div> -->
+      
+      <!--================== Vendor login ===========================-->
+    <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+                class="btn btn-primary btn-sm "
+                type="button"
+              >
+              <i class="fas fa-plus-circle mr-2"></i> Add Product
+              </button>
+          </li>
+        </ul>
+      </div>  -->
+      
+
+    </div>
+    <!-- .row END -->
+  </div>
+  <!-- .container END -->
+</div>
+
+<div class="xs-top-bar d-none d-md-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="xs-top-bar-info">
+              <li>
+                <a class="mr-2" href="#"><i class="icon icon-van"></i>Free Delivery</a>
+              
+              <a href="#"><i class="fas fa-undo"></i>Return Policy</a></li>
+            </ul>
+            <!-- .xs-top-bar-info END -->
+          </div>
+          <div class="col-lg-6">
+            <ul class="xs-social-list">
+              <li class="xs-list-text">Follow Us</li>
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+            <!-- .xs-social-list END -->
+          </div>
+        </div>
+      </div>
+
+       <!--================== without login ===========================-->
+       <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Login
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as vendor</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sign up
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as vendor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!--================== coustomer login ==========================-->
+      <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name                           
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div> -->
+      
+      <!--================== Vendor login ===========================-->
+    <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+                class="btn btn-primary btn-sm "
+                type="button"
+              >
+              <i class="fas fa-plus-circle mr-2"></i> Add Product
+              </button>
+          </li>
+        </ul>
+      </div>  -->
+      
+
+    </div>
+    <!-- .row END -->
+  </div>
+  <!-- .container END -->
+</div>
+
+<div class="xs-top-bar d-none d-md-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="xs-top-bar-info">
+              <li>
+                <a class="mr-2" href="#"><i class="icon icon-van"></i>Free Delivery</a>
+              
+              <a href="#"><i class="fas fa-undo"></i>Return Policy</a></li>
+            </ul>
+            <!-- .xs-top-bar-info END -->
+          </div>
+          <div class="col-lg-6">
+            <ul class="xs-social-list">
+              <li class="xs-list-text">Follow Us</li>
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+            <!-- .xs-social-list END -->
+          </div>
+        </div>
+      </div>
+
+       <!--================== without login ===========================-->
+       <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Login
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as vendor</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sign up
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as vendor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!--================== coustomer login ==========================-->
+      <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name                           
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div> -->
+      
+      <!--================== Vendor login ===========================-->
+    <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+                class="btn btn-primary btn-sm "
+                type="button"
+              >
+              <i class="fas fa-plus-circle mr-2"></i> Add Product
+              </button>
+          </li>
+        </ul>
+      </div>  -->
+      
+
+    </div>
+    <!-- .row END -->
+  </div>
+  <!-- .container END -->
+</div>
+
+<div class="xs-top-bar d-none d-md-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="xs-top-bar-info">
+              <li>
+                <a class="mr-2" href="#"><i class="icon icon-van"></i>Free Delivery</a>
+              
+              <a href="#"><i class="fas fa-undo"></i>Return Policy</a></li>
+            </ul>
+            <!-- .xs-top-bar-info END -->
+          </div>
+          <div class="col-lg-6">
+            <ul class="xs-social-list">
+              <li class="xs-list-text">Follow Us</li>
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+            <!-- .xs-social-list END -->
+          </div>
+        </div>
+      </div>
+
+       <!--================== without login ===========================-->
+       <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Login
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as vendor</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sign up
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as vendor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!--================== coustomer login ==========================-->
+      <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name                           
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div> -->
+      
+      <!--================== Vendor login ===========================-->
+    <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+                class="btn btn-primary btn-sm "
+                type="button"
+              >
+              <i class="fas fa-plus-circle mr-2"></i> Add Product
+              </button>
+          </li>
+        </ul>
+      </div>  -->
+      
+
+    </div>
+    <!-- .row END -->
+  </div>
+  <!-- .container END -->
+</div>
+
+<div class="xs-top-bar d-none d-md-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="xs-top-bar-info">
+              <li>
+                <a class="mr-2" href="#"><i class="icon icon-van"></i>Free Delivery</a>
+              
+              <a href="#"><i class="fas fa-undo"></i>Return Policy</a></li>
+            </ul>
+            <!-- .xs-top-bar-info END -->
+          </div>
+          <div class="col-lg-6">
+            <ul class="xs-social-list">
+              <li class="xs-list-text">Follow Us</li>
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+            <!-- .xs-social-list END -->
+          </div>
+        </div>
+      </div>
+
+       <!--================== without login ===========================-->
+       <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Login
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as vendor</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sign up
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as vendor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!--================== coustomer login ==========================-->
+      <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name                           
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div> -->
+      
+      <!--================== Vendor login ===========================-->
+    <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+                class="btn btn-primary btn-sm "
+                type="button"
+              >
+              <i class="fas fa-plus-circle mr-2"></i> Add Product
+              </button>
+          </li>
+        </ul>
+      </div>  -->
+      
+
+    </div>
+    <!-- .row END -->
+  </div>
+  <!-- .container END -->
+</div>
+
+<div class="xs-top-bar d-none d-md-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="xs-top-bar-info">
+              <li>
+                <a class="mr-2" href="#"><i class="icon icon-van"></i>Free Delivery</a>
+              
+              <a href="#"><i class="fas fa-undo"></i>Return Policy</a></li>
+            </ul>
+            <!-- .xs-top-bar-info END -->
+          </div>
+          <div class="col-lg-6">
+            <ul class="xs-social-list">
+              <li class="xs-list-text">Follow Us</li>
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+            <!-- .xs-social-list END -->
+          </div>
+        </div>
+      </div>
+
+       <!--================== without login ===========================-->
+       <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Login
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Login as vendor</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sign up
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as customer</a>
+                <a class="dropdown-item p-3 my-1 login-drop" href="#">Sign up as vendor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!--================== coustomer login ==========================-->
+      <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name                           
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div> -->
+      
+      <!--================== Vendor login ===========================-->
+    <!-- <div class="col-lg-6">
+        <ul class="xs-top-bar-info right-content">
+          <li>
+            <div class="btn-group p-0">
+              <button
+                class="btn btn-primary btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User name
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuLink"
+                style="z-index: 10000"
+              >
+                <a class="dropdown-item my-3" href="#">My Profile</a>
+                <a class="dropdown-item my-3" href="#">My Order</a>
+                <a class="dropdown-item my-3" href="#">My Wishlist</a>
+                <a class="dropdown-item my-3" href="#">Sign Out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+                class="btn btn-primary btn-sm "
+                type="button"
+              >
+              <i class="fas fa-plus-circle mr-2"></i> Add Product
+              </button>
+          </li>
+        </ul>
+      </div>  -->
+      
+
+    </div>
+    <!-- .row END -->
+  </div>
+  <!-- .container END -->
+</div>

@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style type="text/css">
+      ul.stebar_list {
+    padding: 40px;
+    max-width: 700px;
+}
+
+ul.stebar_list li label {
+    margin: 5px 0 0;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+}
+ul.stebar_list li {
+    text-align: center;
+    display: inline-block;
+    width: calc(25% - 5px);
+    vertical-align: top;
+    position:relative;
+}
+ul.stebar_list li:before {
+    background-color: #ddd;
+    width: 100%;
+    content: '';
+    left: 50%;
+    height: 2px;
+    top: 10px;
+    position: absolute;
+}
+ul.stebar_list li:last-child:before{width:0;}
+ul.stebar_list li span {
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border:1px solid #ddd;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+}
+ul.stebar_list li.active span{
+  background-color: #563d7c;
+  border:0;
+}
+ul.stebar_list li.active label{color:#563d7c;}
+ul.stebar_list li.completed:before{ background-color: #563d7c;}
+.completed span:before{
+  display: inline-block;
+  transform: rotate(45deg);
+  height: var(--height);
+  width: var(--width);
+  border-bottom: var(--borderWidth) solid var(--borderColor);
+  border-right: var(--borderWidth) solid var(--borderColor);
+  content: '';
+  top: 2px;
+  position: absolute;
+  left: 8px;
+}
+:root {
+  --borderWidth:3px;
+  --height: 16px;
+  --width: 8px;
+  --borderColor: #fff;
+}
+    </style>
+    <title>Payment</title>
+  </head>
+  <body>
+
+    <div class="container mb-5">
+      <div class="text-center mt-1">
+        <img src="images/logo.jpg" class="rounded" style="width: 20%;" />
+      </div>
+      <ul class="stebar_list">
+            <li class="active completed">
+                <span></span>
+                <label>SIGN IN</label>
+            </li>
+             <li class="active completed">
+                <span></span>
+                <label>DELIVERY & PAYMENT</label>
+            </li>
+             <li class="active">
+                <span></span>
+                <label>PLACE ORDER</label>
+            </li>
+             <li>
+                <span></span>
+                <label>COMPLETE PAYMENT</label>
+            </li>
+          </ul>
+     
+      <p class="h3">Select a payment method</p>
+      <p class="mb-0 font-weight-bold" style="font-size: small;">Pay faster for all you shopping needs <span class="text-danger">with PayPal balance</span></p>
+      <p style="font-size: small;">Get Instant refund on cancellations | Zero payment failures</p>
+      <div class="row">
+        
+        <!-- Payment Part -->
+        <div class="col-md-9 rounded" style="border:2px solid lightgrey;">
+          
+            
+             <div class="table-responsive">
+                <form action="#" method="#">
+                 <table class="table m-0">
+                     <tr>
+                       <td class="pb-0 pl-0 m-0" style="border-bottom: solid;border-bottom-width: 2px;border-bottom-color: grey;">
+                          <p class="font-weight-bolder mb-1">Your saved credit and debit cards </p>
+                        </td>
+                       <td class="pb-0 pl-0 m-0" style="border-bottom: solid;border-bottom-width: 2px;border-bottom-color: grey;">
+                          <p class="font-weight-normal text-secondary mb-1">Name on card</p>
+                       </td>
+                       <td class="pb-0 pl-0 m-0" style="border-bottom: solid;border-bottom-width: 2px;border-bottom-color: grey;">
+                          <p class="font-weight-normal text-secondary mb-1">Expires on</p>
+                       </td>
+                     </tr>
+                     <tr>
+                       <td class="pb-0 pl-0 m-0" style="width: 50%;">
+                          <div class="form-check">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="...">
+                            <label style="font-family:Calibri;">
+                              Canera Bank Debit Card
+                            </label>
+                            <img src="images/visa.png" style="width: 15%;">
+                            <br>
+                            <label style="font-family: Calibri;">Enter CVV(?):</label>
+                            <input type="number" name="" style="width: 20%;">
+                            <label style="font-size: small;">This card is recommended for you <a href="#">Why?</a></label>
+                          </div>
+                       </td>
+                       <td class="pb-0 pl-0 m-0">Sandeep Sharma</td>
+                       <td class="pb-0 pl-0 m-0">21/9/2020</td>
+                     </tr>
+                     <tr>
+                       <td class="pb-0 pl-0 m-0" style="width: 50%;">
+                          <div class="form-check">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="...">
+                            <label style="font-family:Calibri;">
+                              State Bank of Debit Card
+                            </label>
+                            <img src="images/mastercard.png" style="width: 15%;">
+                          </div>
+                       </td>
+                       <td class="pb-0 pl-0 m-0">Sandeep Sharma</td>
+                       <td class="pb-0 pl-0 m-0">21/9/2020</td>
+                     </tr>
+                 </table>
+               </form>
+             </div>
+          
+
+          <div><!-- Another Payment Option -->
+            <p class="font-weight-bolder mt-2 mb-0">Another Payment Method</p>
+            <hr class="mt-1" style="height: 2px; border: none;background: grey;" />
+            
+            <form action="#" method="#">
+              <div class="form-check mb-3">
+                <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="...">
+                <label style="font-family:Calibri;">
+                  Add Debit/Credit/ATM Card
+                </label><br/>
+                <a href="#"><img src="images/mastercard.png" style="width: 8%;"></a>
+                <a href="#"><img src="images/visa.png" style="width: 8%;"></a>
+                <a href="#"><img src="images/paypal.png" style="width: 5%;"></a>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="...">
+                <label style="font-family:Calibri;">
+                  Net Banking
+                </label><br/>
+                <select class="custom-select custom-select-sm" 
+                  style="width: 30%;font-family: Calibri;">
+                  <option selected>Choose an Option</option>
+                  <option value="#">#</option>
+                  <option value="#">#</option>
+                  <option value="#">#</option>
+                </select>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="...">
+                <label style="font-family:Calibri;">
+                  Other UPI Apps
+                </label>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="...">
+                <label style="font-family:Calibri;">
+                  Pay on Delivery
+                </label>
+                <p style="font-family: calibri;font-size: small;" class="font-weight-bolder">Pay Digitally with SMS Pay Link or Cash.</p>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        
+        <!-- Review Product -->
+        <div class="col-md-3 mt-2">
+          <div class="rounded alert alert-secondary" style="border:2px solid lightgrey;">
+            
+            <form action="place order.html" method="#">
+              <a href="place order.html"><input type="Submit" name="#" value="Continue" style="background-color: orange;" class="w-100 rounded border-0"></a>
+            </form>
+            <p class="text-center" style="font-family: sans-serif;">You can review this order before it's final.</p>
+
+          </div>
+        </div>
+      </div> <!-- row div-->
+    </div> <!--container-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

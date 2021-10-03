@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Market Place</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="favicon.html" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.html" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/jquery-ui.css" />
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/iconfont.css" />
+    <link rel="stylesheet" href="/assets/css/isotope.css" />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/assets/css/vertical-menu.css" />
+    <link rel="stylesheet" href="/assets/css/navigation.min.css" />
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="/assets/css/plugins.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="/assets/css/marketPlace.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <%- include('partials/other_page_header'); -%>
+    <!-- welcome section -->
+    <!--breadcumb start here-->
+    <div class="xs-breadcumb">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Market Place
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!--breadcumb end here--><!-- End welcome section -->
+
+    <div class="container">
+      <div class="container-fluid mt-5 mb-5">
+        <div class="row g-2">
+          <div class="col-md-3">
+            <!-- <div class="t-products p-2">
+              <h6 class="text-uppercase">Computer & Periferals</h6>
+              <div class="p-lists">
+                <div class="d-flex justify-content-between mt-2">
+                  <span>Laptops</span> <span>23</span>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                  <span>Desktops</span> <span>46</span>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                  <span>Monitors</span> <span>13</span>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                  <span>Mouse</span> <span>33</span>
+                </div>
+              </div>
+            </div> -->
+            <!-- Collaspe -->
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <a
+                      class="text-decoration-none"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <h6 class="text-uppercase" style="color: black">Price</h6>
+                    </a>
+                  </h2>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <div class="processor p-2">
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            0 - 500
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            500 - 1000
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            1000 - 3000
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            3000 - 5000
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            5000 above
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <a
+                      class="text-decoration-none collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <h6 class="text-uppercase" style="color: black">
+                        Processor
+                      </h6>
+                    </a>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <div class="processor p-2">
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Intel Core i7
+                          </label>
+                        </div>
+                        <span>3</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Intel Core i6
+                          </label>
+                        </div>
+                        <span>4</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Intel Core i3
+                          </label>
+                        </div>
+                        <span>14</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Intel Centron
+                          </label>
+                        </div>
+                        <span>8</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Intel Pentinum
+                          </label>
+                        </div>
+                        <span>14</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <a
+                      class="text-decoration-none collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <h6 class="text-uppercase" style="color: black">Brand</h6>
+                    </a>
+                  </h2>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <div class="brand p-2">
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Apple
+                          </label>
+                        </div>
+                        <span>13</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Asus
+                          </label>
+                        </div>
+                        <span>4</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Dell
+                          </label>
+                        </div>
+                        <span>24</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Lenovo
+                          </label>
+                        </div>
+                        <span>18</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Acer
+                          </label>
+                        </div>
+                        <span>44</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <a
+                      class="text-decoration-none collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <h6 class="text-uppercase" style="color: black">Type</h6>
+                    </a>
+                  </h2>
+                </div>
+                <div
+                  id="collapseFour"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <div class="type p-2 mb-2">
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Hybrid
+                          </label>
+                        </div>
+                        <span>23</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Laptop
+                          </label>
+                        </div>
+                        <span>24</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Desktop
+                          </label>
+                        </div>
+                        <span>14</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Touch
+                          </label>
+                        </div>
+                        <span>28</span>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckChecked"
+                          >
+                            Tablets
+                          </label>
+                        </div>
+                        <span>44</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary mt-2">Apply</button>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="row g-2">
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">Delhi</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/nOFet9u.jpg" width="200" />
+                  </div>
+                  <div class="about text-center">
+                    <h5>XRD Active Shoes</h5>
+                    <span>$1,999.99</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">NOIDA</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/VY0R9aV.png" width="200" />
+                  </div>
+                  <div class="about text-center">
+                    <h5>Hygen Smart watch</h5>
+                    <span>$123.43</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">NOIDA</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/PSGrLdz.jpg" width="200" />
+                  </div>
+                  <div class="about text-center">
+                    <h5>Acer surface book 2.5</h5>
+                    <span>$1,999.99</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">Delhi</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/OdRSpXG.jpg" width="200" />
+                  </div>
+
+                  <div class="about text-center">
+                    <h5>Dell XPS Surface</h5>
+                    <span>$1,245.89</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">NOIDA</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/X2AwTCY.jpg" width="200" />
+                  </div>
+                  <div class="about text-center">
+                    <h5>Acer surface book 5.5</h5>
+                    <span>$2,999.99</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">NOIDA</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/QQwcBpF.png" width="200" />
+                  </div>
+                  <div class="about text-center">
+                    <h5>Xps smart watch 5.0</h5>
+                    <span>$999.99</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">Delhi</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/PSGrLdz.jpg" width="200" />
+                  </div>
+                  <div class="about text-center">
+                    <h5>Acer surface book 8.5</h5>
+                    <span>$3,999.99</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">Delhi</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/m22OQy9.jpg" width="200" />
+                  </div>
+                  <div class="about text-center">
+                    <h5>Tyko Running shoes</h5>
+                    <span>$99.99</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product py-4">
+                  <span class="text-muted">Delhi</span>
+                  <div class="text-center">
+                    <img src="https://i.imgur.com/OdRSpXG.jpg" width="200" />
+                  </div>
+                  <div class="about text-center">
+                    <h5>Dell surface book 5</h5>
+                    <span>$1,999.99</span>
+                  </div>
+                  <div
+                    class="cart-button mt-3 px-2 d-flex d-flex justify-content-around"
+                  >
+                    <div class="add">
+                      <span class="product_fav"
+                        ><i class="fas fa-comments"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                      <span class="product_fav"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer'); -%>
+
+    <!-- js file start -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
+    <script src="/assets/js/modernizr.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/Popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.menu-aim.js"></script>
+    <script src="/assets/js/vertical-menu.js"></script>
+    <script src="/assets/js/tweetie.js"></script>
+    <script src="/assets/js/echo.min.js"></script>
+    <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/assets/js/jquery.countdown.min.js"></script>
+    <script src="/assets/js/jquery.waypoints.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+    <script src="/assets/js/spectragram.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- End js file -->
+  </body>
+</html>

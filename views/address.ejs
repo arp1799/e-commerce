@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Select Address</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="favicon.html" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.html" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/jquery-ui.css" />
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/iconfont.css" />
+    <link rel="stylesheet" href="/assets/css/isotope.css" />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/assets/css/vertical-menu.css" />
+    <link rel="stylesheet" href="/assets/css/navigation.min.css" />
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="/assets/css/plugins.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="/assets/css/address.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <%- include('partials/other_page_header'); -%>
+    <!-- welcome section -->
+    <!--breadcumb start here-->
+    <div class="xs-breadcumb">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html"> Checkout</a></li>
+            <li class="breadcrumb-item"><a href="index.html"> Address</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!--breadcumb end here--><!-- End welcome section -->
+
+    <div class="container">
+      <div class="step-heading pb-3">
+        <h3 class="mb-3">Select a delivery address</h3>
+        <p>
+          Is the address you'd like to ue displayed below? If so, click the
+          corresponding "Deliver to this address" button. Or you can<a href="#">
+            enter a new delivery address.</a
+          >
+        </p>
+      </div>
+      <%for(var i=0;i<addresslist.length;i++){%>
+      <div class="address-block pt-3">
+        <h5><%=addresslist[i].fullname%></h5>
+        <label class="d-block mb-0"
+          ><%=addresslist[i].flatno%><br />
+          <%=addresslist[i].landmark%><br />
+          <%=addresslist[i].city%>,<%=addresslist[i].state%></label
+        >
+        <span class="d-block"><%=addresslist[i].pin%></span>
+        <span class="d-block"><%=addresslist[i].country%></span>
+        <form action="/cart/payment/<%=total%>" method="POST"><button class="btn btn-success mb-2 d-block w-100"  >Deliver to this address</button></form>
+        <div class="d-flex">
+          
+         <a href="/user/address/edit/<%=addresslist[i]._id%>"> <button class="btn mr-1 w-100 btn-primary" >Edit</button></a>
+          
+          <!-- <button class="btn ml-1 w-100 btn-danger" onclick="del()">Delete</button> -->
+         <a href="/user/address/delete/<%=addresslist[i]._id%>/<%=total%>"> <button class="btn ml-1 w-100 btn-danger" >Delete</button></a>
+        </div>
+      </div>
+      <%}%>
+      <!-- <script>
+        function posting(){
+          console.log('sbjwbjwbxwxbxhj')
+            fetch('/user/address?sum='+12+'&',{
+              method:'DELETE',
+              redirect:'follow'
+            }).then((res)=>{
+              res.json().then((daat)=>{
+                console.log(daat)
+              })
+            })
+        }
+      </script> -->
+      <!-- <div class="address-block pt-3">
+        <h5>Kartik Rajput</h5>
+        <label class="d-block mb-0"
+          >A/10<br />
+          Saraswati Vihar<br />
+          Gurugram,Haryana</label
+        >
+        <span class="d-block">246763</span>
+        <span class="d-block">India</span>
+        <a href="delivery option.html"
+          ><button class="btn btn-success mb-2 d-block w-100">
+            Deliver to this address
+          </button></a
+        >
+        <div class="d-flex">
+          <a href="edit-address.html"
+            ><button class="btn mr-1 w-100 btn-primary">Edit</button></a
+          >
+          <button class="btn ml-1 w-100 btn-danger">Delete</button>
+        </div>
+      </div>
+      <div class="address-block pt-3">
+        <h5>Shivi Khanna</h5>
+        <label class="d-block mb-0"
+          >M-18<br />
+          Govind Colony<br />
+          Mumbai,Maharashtra</label
+        >
+        <span class="d-block">246763</span>
+        <span class="d-block">India</span>
+        <a href="delivery option.html"
+          ><button class="btn btn-success mb-2 d-block w-100">
+            Deliver to this address
+          </button></a
+        >
+        <div class="d-flex">
+          <a href="edit-address.html"
+            ><button class="btn mr-1 w-100 btn-primary">Edit</button></a
+          >
+          <button class="btn ml-1 w-100 btn-danger">Delete</button>
+        </div>
+      </div> -->
+      <div class="main long-form-block">
+        <div class="form-body">
+          <h3 class="mb-2">Add a new Address</h3>
+          <form action="/user/address/<%=total%>" method="POST">
+            <label>Country Region</label><br />
+            <select name="Country-region" id="Country" class="form-control">
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Afganistan">Afganistan</option>
+              <option value="UK">UK</option></select
+            ><br />
+            <label>Full name</label>
+            <input class="form-control" type="text" name="fullname" required />
+            <label>Mobile Number</label>
+            <input
+              class="form-control"
+              type="text"
+              name="phoneno"
+              placeholder="10-digit Mobile number without prefixes"
+              required
+            />
+            <label>May be used to assist delivery</label><br />
+            <label>PIN Code</label>
+            <input
+              class="form-control"
+              type="text"
+              name="pin"
+              placeholder="6 digits [0-9] PIN code"
+              required
+            /><br />
+            <label>Flat,House no.,Building,company,Apartment</label>
+            <input
+              class="form-control"
+              type="text"
+              name="flatno"
+              required
+            /><br />
+            <label>Area,Colony,Street,Sector,Village</label><br />
+            <input class="form-control" type="text" name="area" /><br />
+            <label>Landmark</label><br />
+            <input
+              class="form-control"
+              type="text"
+              name="landmark"
+              placeholder="E.g, Near AIIMS Flyover,Behind Regal Cinema,etc"
+              required
+            /><br />
+            <label>Town/City</label><br />
+            <input
+              class="form-control"
+              type="text"
+              name="city"
+              required
+            /><br />
+            <label>State/Province/Region</label><br />
+            <select class="form-control" name="state" id="State">
+              <option>Select an state</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chattisgarh">Chattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerela">Kerela</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashta">Maharashta</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option></select
+            ><br />
+            <h3>Add delivery instructions</h3>
+            <p>
+              Preferences are used to plan your delivery. However, shipments can
+              sometimes arrive early or later than planned.
+            </p>
+            <label>Address Type</label><br />
+            <select class="form-control" name="State" id="State">
+              <option value="Home">Select an address type</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Goa">Goa</option>
+              <option value="Kerela">Kerela</option></select
+            ><br />
+            <input type="checkbox" name="checkbox" />Use as my Default address.
+            <button class="btn btn-primary my-2 w-100"  type="submit">Add address</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer'); -%>
+    <!-- js file start -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
+    <script src="/assets/js/modernizr.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/Popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.menu-aim.js"></script>
+    <script src="/assets/js/vertical-menu.js"></script>
+    <script src="/assets/js/tweetie.js"></script>
+    <script src="/assets/js/echo.min.js"></script>
+    <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/assets/js/jquery.countdown.min.js"></script>
+    <script src="/assets/js/jquery.waypoints.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+    <script src="/assets/js/spectragram.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

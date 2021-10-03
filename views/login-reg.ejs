@@ -1,0 +1,161 @@
+<!-- get_header('Page Name','Title')-->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>globalnostalgia - Login Register</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="favicon.html">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.html">
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/css/jquery-ui.css">
+
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/css/animate.css">
+		<link rel="stylesheet" href="/assets/css/iconfont.css">
+		<link rel="stylesheet" href="/assets/css/isotope.css">
+		<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="/assets/css/vertical-menu.css">
+		<link rel="stylesheet" href="/assets/css/navigation.min.css">
+		
+
+		<!--For Plugins external css-->
+		<link rel="stylesheet" href="/assets/css/plugins.css" />
+
+		<!--Theme custom css -->
+		<link rel="stylesheet" href="/assets/css/login_reg.css">
+
+		<!--Theme Responsive css-->
+		<link rel="stylesheet" href="/assets/css/responsive.css" />
+	</head>
+	<body>
+    
+    <%- include('partials/only_login_page_header'); -%>
+  <!-- <div class="nav-cover"></div> -->
+<!-- welcome section -->
+<!--breadcumb start here-->
+<div class="xs-breadcumb">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Register</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+<!--breadcumb end here--><!-- End welcome section -->
+
+
+
+<!-- login register section -->
+<section class="xs-section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row customer-info-forms">
+                    <div class="col-md-6">
+                        <div class="xs-customer-form-wraper">
+                            <h4>Log in your account</h4>
+                            <p>Login and Shop on Global Nostalgia</p>
+                            <% if(typeof no !== 'undefined' && no === '1'){%>
+                            <%- include('./partials/message.ejs')%>
+                            <%}%>
+                            <form action="/user/signin" method="POST" class="xs-customer-form">
+                                <div class="input-group email_cust">
+                                    <input type="email" class="form-control " name="email" id="customer_email"  placeholder="Enter Email Address">
+                                </div>
+                                <div class="input-group pass_cust ">
+                                    <input type="password" class="form-control " name="password" id="customer_password"  placeholder="Enter Password">
+                                </div>
+                                <p><a href="/user/forget-password">FORGET YOUR PASSWORD?</a></p>
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                <!--<p>or</p>
+                                <a href="#" class="btn btn-info btn-block">Login with your facebook</a>
+                                <a href="#" class="btn btn-danger btn-block">Login with your google+</a>-->
+                            </form><!-- .xs-customer-form END -->
+                        </div><!-- .xs-customer-form-wraper END -->
+                    </div>
+                    <p class="form-separetor">or</p>
+                    <div class="col-md-6">
+                        <div class="xs-customer-form-wraper">
+                            <h4>Register as a new customer</h4>
+                            <p>Provide your details and register on Global Nostalgia to continue Shopping </p>
+                            <% if(typeof no !== 'undefined' && no === '2'){%>
+                              <%- include('./partials/message.ejs')%>
+                              <%}%>
+                            <form action="/user/register" method="POST" class="xs-customer-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="firstname" id="customer_firstName"  placeholder="First Name">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="lastname" id="customer_lastName"  placeholder="Last Name">
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" name="email" id="customer_r_email"  placeholder=" Email Address">
+                                </div>
+                                <div class="input-group">
+                                    <input type="tel" class="form-control" name="phoneno" id="customer_mobile_no"  placeholder=" Mobile No.">
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" name="password" id="customer_r_password"  placeholder="Enter Password" required tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Enter a combination of at least eight numbers, letters and Special Symbols (such as !,@ and &).">
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="customer_r_password"  placeholder="Confirm Password" required tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Same as the password">
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Agree to the <span><a href="/other/terms-and-condition">Terms and Conditions</a></span></label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                                <!--<p>or</p>
+                                <a href="#" class="btn btn-info btn-block">Login with your facebook</a>
+                                <a href="#" class="btn btn-danger btn-block">Login with your google+</a>-->
+                            </form><!-- .xs-customer-form END -->
+                        </div><!-- .xs-customer-form-wraper END -->
+                    </div>
+                </div>
+            </div>  
+        </div><!-- .row END -->
+    </div><!-- .container END -->
+</section><!-- end login register section -->
+<!--for registration form popup-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+    });
+    </script>
+
+<%- include('partials/footer'); -%>
+		<!-- js file start -->
+		<script src="/assets/js/jquery-3.2.1.min.js"></script>
+		<script src="/assets/js/jquery-ui.js"></script>
+		<script src="/assets/js/modernizr.js"></script>
+		<script src="/assets/js/plugins.js"></script>
+		<script src="/assets/js/Popper.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/isotope.pkgd.min.js"></script>
+		<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="/assets/js/owl.carousel.min.js"></script>
+		<script src="/assets/js/jquery.menu-aim.js"></script>
+		<script src="/assets/js/vertical-menu.js"></script>
+		<script src="/assets/js/tweetie.js"></script>
+		<script src="/assets/js/echo.min.js"></script>
+		<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+		<script src="/assets/js/jquery.countdown.min.js"></script>
+		<script src="/assets/js/jquery.waypoints.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+		<script src="/assets/js/spectragram.min.js"></script>
+		<script src="/assets/js/main.js"></script>		<!-- End js file -->
+	</body>
+</html>

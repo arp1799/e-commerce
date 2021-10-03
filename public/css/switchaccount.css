@@ -1,0 +1,57 @@
+body {
+  padding-top: 10px;
+}
+.header-img {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-body {
+  background: #fdfdfd;
+  -webkit-box-shadow: 9px 6px 18px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 6px 18px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 6px 18px -4px rgba(0, 0, 0, 0.75);
+  margin: auto;
+  width: 50vw;
+  cursor: pointer;
+}
+.heading {
+  padding-left: 20px;
+  margin-left: auto;
+}
+.container {
+  max-width: 300px;
+  padding: 20px;
+}
+.pic {
+  float: left;
+}
+.info {
+  padding-left: 10px;
+  float: left;
+}
+
+.signOut-bts {
+  position: relative;
+  float: right;
+}
+.add-accnt-img {
+  float: left;
+}
+.add-accnt-link {
+  width: 95%;
+  padding: 10px;
+  font-size: 20px;
+  float: left;
+  background: #ffffff;
+  -webkit-box-shadow: 10px 13px 40px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 13px 40px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 13px 40px -19px rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 400px) {
+  .main-body {
+    margin: auto;
+    width: 90%;
+  }
+}

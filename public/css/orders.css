@@ -1,0 +1,99 @@
+.container{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.buttons{
+    width: 68%;
+    height: 16%;
+    border-radius: 5px;
+    background-color:#ffbb99;
+    padding-right: 10%;
+    margin-left: 120px;
+}
+
+
+.buttons:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+  }
+  .card-body{
+      padding-right: 50px;
+  }
+
+  .buttons1{
+    width: 68%;
+    height: 16%;
+    border-radius: 5px;
+    background-color:#e6e6e6;
+    padding-right: 10%;
+    margin-left: 120px;
+    
+  }
+
+  .portion{
+      margin-bottom: 20px;
+  }
+
+  .buy-button{
+    width: 68%;
+    height: 16%;
+    border-radius: 5px;
+    background-color:#ffbb99;
+    padding-right: 10%;
+   
+
+  }
+  li{
+      display: inline;
+      margin-right: 20px;
+      font-weight: bold;
+  }
+  
+
+.right1{
+    margin-left: 50%;
+}
+   
+
+    .links{
+        text-decoration: none;
+        padding-right: 10px;
+        font-weight: bold;
+
+    }
+
+    .submit-btn{
+        background-color: black;
+        color: white;
+    }
+
+    .acc{
+        color: rgb(88, 162, 247);
+        font-weight: bold;
+    }
+
+    .ord{
+        color: #ffbb99;
+        font-weight: bold;
+    }
+    .card-img-top{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+
+    .card-desc{
+        box-sizing: border-box;
+        height: 80px;
+       
+    }
+
+    .active{
+        color: black;
+        font-weight: bold;
+    }
+  
+  

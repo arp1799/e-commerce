@@ -1,0 +1,166 @@
+<!-- get_header('Page Name','Title')-->
+<!doctype html>
+<html class="no-js" lang="en">
+	
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Cart</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon.html">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.html">
+		<link rel="stylesheet" href="/assets/css/woocommerce.css">
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/css/jquery-ui.css">
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/css/animate.css">
+		<link rel="stylesheet" href="/assets/css/iconfont.css">
+		<link rel="stylesheet" href="/assets/css/isotope.css">
+		<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="/assets/css/vertical-menu.css">
+		<link rel="stylesheet" href="/assets/css/navigation.min.css">
+		
+		<!--For Plugins external css-->
+		<link rel="stylesheet" href="/assets/css/plugins.css" />
+
+		<!--Theme custom css -->
+		<link rel="stylesheet" href="/assets/css/index.css">
+
+		<!--Theme Responsive css-->
+		<link rel="stylesheet" href="/assets/css/responsive.css" />
+	</head>
+	<body class="woocommerce">
+    <%- include('partials/other_page_header'); -%>
+<!-- welcome section -->
+<!--breadcumb start here-->
+<div class="xs-breadcumb">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Cart</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+<!--breadcumb end here--><!-- End welcome section -->
+
+<!-- cart section -->
+<div class="cart-area xs-section-padding">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+            <%var sum=0,arr=[]%>
+            <%for(var i=0; i<cart.length;i++){%>
+                <%sum+=parseInt(cart[i].productdetail.price)%>
+           <%}%>
+           
+            <form class="woocommerce-cart-form" action="/user/address/<%=sum%>" >
+
+                
+                <div class="table-responsive">
+                    <table class="shop_table">
+                        <thead>
+                            <tr>
+                            <th class="product-remove">&nbsp;</th>
+                            <th class="product-thumbnail">&nbsp;</th>
+                            <th class="product-name">Product</th>
+                            <th class="product-price">Price</th>
+                            <th class="product-quantity">Quantity</th>
+                            <th class="product-subtotal">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%for(var i=0; i<cart.length;i++){%>
+                            <tr class="woocommerce-cart-form__cart-item cart_item">
+                                <td class="product-remove">
+                                    <a href="/user/removecart/<%=cart[i]._id%>" class="remove" aria-label="Remove this item" data-product_id="1332" data-product_sku="">×</a>						
+                                </td>
+                                <td class="product-thumbnail">
+                                    <a href="#"><img src="<%=cart[i].productdetail.avatar[0]%>" style="width:142px;height:125px" class="attachment-woocommerce_thumbnail" alt=""></a>						
+                                </td>
+                                <td class="product-name" data-title="Product">
+                                    <a href="/product/id/<%=cart[i]._id%>"><%=cart[i].productdetail.productname%></a>
+                                    <dl class="variation">
+                                        <dt class="variation-Vendor">Vendor:</dt>
+                                        <dd class="variation-Vendor">
+                                            <p>Marketo</p>
+                                        </dd>
+                                    </dl>
+                                </td>
+                                <td class="product-price" data-title="Price">
+                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₹</span><%=cart[i].productdetail.price%></span>						
+                                </td>
+                                <td class="product-quantity" data-title="Quantity">
+                                    <div class="w-quantity quantity xs_input_number" >
+                                        <input  type="number" onclick="changed()" min="1" max="100" value="1" id="increment"/>
+                                    </div>
+                                </td>
+                                    <script>
+                                        function changed(){
+                                            console.log('12345667s')
+                                            console.log(document.getElementById('increment').value)
+                                        }
+                                    </script>
+                                <td class="product-subtotal" data-title="Total">
+                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₹</span><%=cart[i].productdetail.price%></span>
+                                </td>
+                            </tr>
+                            <%}%>
+                            <tr>
+                                <td colspan="6" class="actions">
+                                    <div class="wc-proceed-to-checkout">
+                                        <button class="btn-block btn btn-primary" onclick="dec()" type="submit">Proceed to checkout</button>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            <script>
+                                console.log('hello')
+                                function dec(){
+                                    console.log(123)
+                                //let cart='<%-cart%>'
+                                    
+                                   for(var i=0;i<cart.length;i++){
+                                    console.log('hello',document.getElementById('increment').value)
+                                   }
+                                 }
+                                </script>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+          </div>
+          
+       <!-- .row END -->
+    </div>
+    <!-- .container END -->
+ </div><!-- End cart section -->
+ <%- include('partials/footer'); -%>
+		<!-- js file start -->
+		<script src="/assets/js/jquery-3.2.1.min.js"></script>
+		<script src="/assets/js/jquery-ui.js"></script>
+		<script src="/assets/js/modernizr.js"></script>
+		<script src="/assets/js/plugins.js"></script>
+		<script src="/assets/js/Popper.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/isotope.pkgd.min.js"></script>
+		<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="/assets/js/owl.carousel.min.js"></script>
+		<script src="/assets/js/jquery.menu-aim.js"></script>
+		<script src="/assets/js/vertical-menu.js"></script>
+		<script src="/assets/js/tweetie.js"></script>
+		<script src="/assets/js/echo.min.js"></script>
+		<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+		<script src="/assets/js/jquery.countdown.min.js"></script>
+		<script src="/assets/js/jquery.waypoints.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+		<script src="/assets/js/spectragram.min.js"></script>
+		<script src="/assets/js/main.js"></script>		<!-- End js file -->
+	</body>
+</html>

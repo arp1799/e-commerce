@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Payment</title>
+  </head>
+  <body>
+
+    <div class="container mb-5">
+      <div class="text-center mt-1">
+        <img src="/images/logo.jpg" class="rounded" style="width: 20%;" />
+      </div>
+      <p class="h3">Select a payment method</p>
+      <p class="mb-0 font-weight-bold" style="font-size: small;">Pay faster for all you shopping needs <span class="text-danger">with PayPal balance</span></p>
+      <p style="font-size: small;">Get Instant refund on cancellations | Zero payment failures</p>
+      <div class="row">
+        
+        <!-- Payment Part -->
+        <div class="col-md-9 rounded" style="border:2px solid lightgrey;">
+             <!-- CANERA BANK OPTION -->
+             <div class="row mt-2">
+               <div class="col-lg-6 pr-0">
+                 <p class="font-weight-bolder mb-1 border-bottom">Your saved credit and debit cards </p>
+                 <div class="form-check">
+                    <input class="form-check-input position-static" type="radio" name="blank" value="#" data-toggle="collapse" data-target="#caneraCollapse" onclick="hideCollapse()">
+                    <label style="font-family:Calibri;">
+                    Canera Bank Debit Card
+                    </label>
+                    <img src="/images/visa.png" style="width: 15%;">
+                     <div class="collapse" id="caneraCollapse">
+                       <div class="card-body p-0">
+                        <label style="font-family: Calibri;">Enter CVV(?):</label>
+                        <input type="number" name="" style="width: 30%;" class="form-control d-inline">
+                        <label class="d-block" style="font-size: small;">This card is recommended for you <a href="#">Why?</a></label>
+                       </div>
+                     </div>
+                 </div>
+               </div>
+               <div class="col-lg-3 pr-0">
+                 <p class="font-weight-bolder text-secondary mb-1 border-bottom">Name on card</p>
+                 <p>Sandeep Sharma</p>
+               </div>
+               <div class="col-lg-3">
+                 <p class="font-weight-bolder text-secondary mb-1 border-bottom">Expires on</p>
+                 <p>10/2/2020</p>
+               </div>
+               <!-- STATE BANK OPTION -->
+               <div class="col-lg-6 pr-0 ">
+                 <div class="form-check">
+                    <input class="form-check-input position-static" type="radio" name="blank" value="#" data-toggle="collapse" data-target="#stateCollapse" onclick="hideCollapse()">
+                    <label style="font-family:Calibri;">
+                    State Bank of Debit Card
+                    </label>
+                    <img src="/images/mastercard.png" style="width: 15%;">
+                    <div class="collapse" id="stateCollapse">
+                       <div class="card-body p-0">
+                        <label style="font-family: Calibri;">Enter CVV(?):</label>
+                        <input type="number" name="" style="width: 30%;" class="form-control d-inline">
+                        <label class="d-block" style="font-size: small;">This card is recommended for you <a href="#">Why?</a></label>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 pr-0">
+                 <p>Sandeep Sharma</p>
+               </div>
+               <div class="col-lg-3">
+                 <p>10/2/2020</p>
+               </div>
+
+            </div>
+          
+
+          <div><!-- Another Payment Option -->
+            <p class="font-weight-bolder mt-2 mb-0">Another Payment Method</p>
+            <hr class="mt-1" style="height: 2px; border: none;background: grey;" />
+            
+            <!-- <form action="#" method="#"> -->
+              <div class="form-check">
+            
+                  <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" data-toggle="collapse" data-target="#mycollapse" onclick="hideCollapse()">
+                  <label style="font-family:Calibri;" class="mb-0">
+                    Add Debit/Credit/ATM Card
+                  </label><br/>
+                  <a href="#"><img src="/images/mastercard.png" style="width: 8%;"></a>
+                  <a href="#"><img src="/images/visa.png" style="width: 8%;"></a>
+                  <a href="#"><img src="/images/paypal.png" style="width: 5%;"></a>
+                  
+                  <div class="collapse" id="mycollapse">
+                    <div class="card-body p-0">
+                      <small>We'll save this card for your convenience. Removeit by going to Your Account section.</small>
+                        <form action="#" method="#">
+                          <div class="row">
+                            <div class="col-lg">
+                              <div class="form-group">
+                                <label style="font-size: small;">Name on card</label>
+                                  <input type="text" class="form-control">
+                              </div>
+                            </div>
+                            <div class="col-lg">
+                              <div class="form-group">
+                              <label style="font-size: small;">Card Number</label>
+                              <input type="number" class="form-control">
+                              </div>
+                            </div>
+                            <div class="col-lg">
+                                <div class="form-group">
+                                  <label style="font-size: small;">Expiry date</label><br>
+                                    <select class="form-control d-inline" style="width: 45%;">
+                                      <option>1</option>
+                                      <option>5</option>
+                                    </select>
+                                    <select class="form-control d-inline" style="width: 45%;">
+                                      <option>1</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                             </div>
+                             <div class="col-lg">
+                              <div class="form-group mt-4">
+                                <input type="submit" class="btn btn-warning" value="Add Your Card"/>
+                                </div>
+                             </div> <!-- End Col Div-->
+                          </div> <!-- End ROW DIV-->
+                        </form>
+                      </div>
+                    </div>
+                </div> <!-- Add Cards End DIV-->
+
+                <div class="form-check mb-3">
+                  <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="..." onclick="hideCollapse()">
+                  <label style="font-family:Calibri;">
+                    Net Banking
+                  </label><br/>
+                  <select class="custom-select custom-select-sm bg-light" 
+                    style="width: 30%;font-family: Calibri;">
+                    <option selected>Choose an Option</option>
+                    <option value="#">#</option>
+                    <option value="#">#</option>
+                    <option value="#">#</option>
+                  </select>
+                </div>
+
+                <div class="form-check mb-3">
+                  <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="..." onclick="hideCollapse()">
+                  <label style="font-family:Calibri;">
+                    Other UPI Apps
+                  </label>
+                </div>
+
+                <div class="form-check mb-3">
+                  <input class="form-check-input position-static" type="radio" name="blankRadio" value="#" aria-label="..." onclick="hideCollapse()">
+                  <label style="font-family:Calibri;">
+                    Pay on Delivery
+                  </label>
+                  <p style="font-family: calibri;font-size: small;" class="font-weight-bolder">Pay Digitally with SMS Pay Link or Cash.</p>
+                </div>
+
+            <!-- </form> -->
+          </div>
+        </div>
+        
+        <!-- Review Product -->
+        <div class="col-md-3 mt-2">
+          <div class="rounded alert alert-secondary" style="border:2px solid lightgrey;">
+            
+            <form action="/cart/review/<%= aid %>" method="GET">
+              <a ><input type="Submit" name="#" value="Continue" style="background-color: orange;" class="w-100 rounded border-0"></a>
+            </form>
+            <p class="text-center" style="font-family: sans-serif;">You can review this order before it's final.</p>
+
+          </div>
+        </div>
+      </div> <!-- row div-->
+    </div> <!--container-->
+
+   <!--Hiding Collapse Using Javascript-->
+    <script type="text/javascript"> 
+      function hideCollapse(){
+        $('.collapse').collapse('hide');
+      }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

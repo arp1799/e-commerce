@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width">
+      <title>Address Page</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="/css/address.css" rel="stylesheet">
+   </head>
+   <body>
+     <div class="head">
+        <div class="logo text-center"><img src="../images\logo.jpg"></div>
+      </div>
+      <ul class="stebar_list">
+            <li class="active completed">
+                <span></span>
+                <label>SIGN IN</label>
+            </li>
+             <li class="active">
+                <span></span>
+                <label>DELIVERY & PAYMENT</label>
+            </li>
+             <li>
+                <span></span>
+                <label>PLACE ORDER</label>
+            </li>
+             <li>
+                <span></span>
+                <label>COMPLETE PAYMENT</label>
+            </li>
+          </ul>
+     <div class="step-heading pb-3"><h3 class="mb-3">Select a delivery address</h3>
+        <p>Is the address you'd like to ue displayed below? If so, click the corresponding "Deliver to this address" button. Or you can<a href="#"> enter a new delivery address.</a></p>
+     </div> 
+     <hr>
+     <div class="address-block pt-3">
+       <h5>Abhi Rajput</h5>
+       <label class="d-block mb-0">M-18<br>
+             Govind Colony<br>
+             Mumbai,Maharashtra</label>
+        <span class="d-block">246763</span>
+        <span class="d-block">India</span>
+        <a href="delivery option.html"><button class="btn d-block w-100">Deliver to this address</button></a>
+        <div class="d-flex">
+          <a href="edit-address.html"><button class="btn mr-1  w-100 btn-primary">Edit</button></a>
+          <button class="btn ml-1 w-100 btn-danger">Delete</button></div>
+     </div>
+     <div class="address-block pt-3">
+       <h5>Kartik Rajput</h5>
+       <label class="d-block mb-0">A/10<br>
+             Saraswati Vihar<br>
+             Gurugram,Haryana</label>
+        <span class="d-block">246763</span>
+        <span class="d-block">India</span>
+        <a href="delivery option.html"><button class="btn d-block w-100">Deliver to this address</button></a>
+        <div class="d-flex">
+          <a href="edit-address.html"><button class="btn mr-1  w-100 btn-primary">Edit</button></a>
+          <button class="btn ml-1 w-100 btn-danger">Delete</button></div>
+     </div>
+     <div class="address-block pt-3">
+       <h5>Shivi Khanna</h5>
+       <label class="d-block mb-0">M-18<br>
+             Govind Colony<br>
+             Mumbai,Maharashtra</label>
+        <span class="d-block">246763</span>
+        <span class="d-block">India</span>
+        <a href="delivery option.html"><button class="btn d-block w-100">Deliver to this address</button></a>
+        <div class="d-flex">
+          <a href="edit-address.html"><button class="btn mr-1  w-100 btn-primary">Edit</button></a>
+          <button class="btn ml-1 w-100 btn-danger">Delete</button></div>
+     </div>
+     <div class="main long-form-block">
+      <div class="form-body"><h3 class="mb-2">Add a new Address</h3>
+        <form>
+          <label>Country Region</label><br>
+          <select name="Country-region" id="Country" class="form-control">
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Afganistan">Afganistan</option>
+              <option value="UK">UK</option>
+          </select><br>
+          <label>Full name</label>
+           <input class="form-control" type="text" name="fullname" required>
+          <label>Mobile Number</label>
+          <input class="form-control" type="text" name="mbl" placeholder="10-digit Mobile number without prefixes" required>
+          <label>May be used to assist delivery</label><br>
+          <label>PIN Code</label>
+           <input class="form-control" type="text" name="pin" placeholder="6 digits [0-9] PIN code" required><br>
+           <label>Flat,House no.,Building,company,Apartment</label>
+           <input class="form-control" type="text" name="flat" required><br>
+           <label>Area,Colony,Street,Sector,Village</label><br>
+           <input class="form-control" type="text" name="Area"><br>
+           <label>Landmark</label><br>
+           <input class="form-control" type="text" name="Landmark" placeholder="E.g, Near AIIMS Flyover,Behind Regal Cinema,etc" required><br>
+           <label>Town/City</label><br>
+           <input class="form-control" type="text" name="town" required><br>
+           <label>State/Province/Region</label><br>
+           <select class="form-control" name="State" id="State">
+              <option>Select an state</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chattisgarh">Chattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerela">Kerela</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashta">Maharashta</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+          </select><br>
+           <h3>Add delivery instructions</h3>
+           <p>Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned.</p>
+           <label>Address Type</label><br>
+           <select class="form-control" name="State" id="State">
+              <option value="Home">Select an address type</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Goa">Goa</option>
+              <option value="Kerela">Kerela</option>
+          </select><br>
+          <input type="checkbox" name="checkbox">Use as my Default address.
+           <button class="btn w-100">Add address</button>
+        </form>
+      </div>
+     </div>
+   </body>
+</html>

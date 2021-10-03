@@ -1,0 +1,65 @@
+.navmenu a {
+  color: black;
+}
+
+.navmenu:hover a {
+  color: black;
+}
+.drop a:hover {
+  color: black;
+}
+
+.drop:hover a {
+  color: black;
+}
+.mega-menu {
+  position: absolute;
+  width: 70vw;
+  height: 30vh;
+  left: 15vw;
+  padding: 1vw;
+  background-color: white;
+  transition: all 0.4s ease;
+  visibility: hidden;
+  opacity: 0;
+  border-color: rgb(218, 218, 218);
+  border-style: inset;
+  border: 0px 1px 1px 1px;
+  border-top: 0;
+}
+
+.drop:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.mega-menu p {
+  width: 5vw;
+}
+
+.mega-menu p:hover {
+  text-decoration: underline;
+}
+.inner-megamenu {
+  width: 5vw;
+  float: left;
+  margin-right: 1%;
+}
+
+.inner-megamenu:last-child {
+  margin-right: 0%;
+}
+
+.inner-megamenu p {
+  padding: 0 0;
+  transition: all 0.4s ease;
+}
+.drop:hover .mega-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.inner-img-megamenu {
+  width: 10vw;
+  float: left;
+  margin-right: 1%;
+}
